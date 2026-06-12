@@ -12,17 +12,23 @@
 		1C5C04AB8385E196109B152A /* Waterway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A8D08DBDF038960DA8E4B4 /* Waterway.swift */; };
 		22B4D79AA739FCED42B27D0A /* RegulationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D325B35C9EC498EEA4305E8A /* RegulationRepository.swift */; };
 		23817CC5B593E70CF27F695F /* western_wa_waterways.json in Resources */ = {isa = PBXBuildFile; fileRef = C8EDEB8DECABF50C4054B93F /* western_wa_waterways.json */; };
+		2FE62811224EDD5AC9C9CF74 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0C645F962170F7B7C9B13A /* WeatherView.swift */; };
 		399106D40BDF7CF75597A6A1 /* RegulationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589AA17E74B8C50DA46315F9 /* RegulationListView.swift */; };
+		45CD8F5AE3901481525504AB /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F559982E44C0DD3E26065F3D /* DesignSystem.swift */; };
 		48E7E482ED8B2DF1F9CA2A5D /* RiverListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE258800140EBC2E7DFE9074 /* RiverListView.swift */; };
+		55CDFC71506FB42C1AD27025 /* MapWaterwaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E970AC27369935793777CE0E /* MapWaterwaysView.swift */; };
 		5ACDF621EF558E8E68F9BC61 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B251C44785454C4C1FA88E /* AppEnvironment.swift */; };
+		5F37982251B5D95B001D5834 /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9664591DF164C8A244143C /* AppNavigation.swift */; };
 		6C330E5DF7EF24C421E19D37 /* RecommendationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203BE3D9BCDC3DD8F4C9165 /* RecommendationCard.swift */; };
 		6CC93903E2FE98F9A71D7C3B /* regulations_2025.json in Resources */ = {isa = PBXBuildFile; fileRef = A1DD30861FFAC1294BE5C568 /* regulations_2025.json */; };
 		71D006267871ECB9B748CC3D /* CatchRecordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79492CAAB9656895B7F235BF /* CatchRecordRepository.swift */; };
 		794D045CC3DDF1ACBF191CA0 /* CatchRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9D02EEC7C1C38519EBBBFA /* CatchRecord.swift */; };
 		80E342E88D16B0ED30A0E927 /* RegulationRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40CA8DE8B90E3D55DE790D /* RegulationRepositoryTests.swift */; };
 		95BC2B2DB0BF985E27998B0A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830E35D2E1E1882AC88902A /* DashboardView.swift */; };
+		987DC3860FEEEF59D7BE6227 /* HistoricalCatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F031A6163A4AD1CFE41B3A /* HistoricalCatchesView.swift */; };
 		99E32B268579C9AAE56E6702 /* Regulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A398F26520C00A2411B763 /* Regulation.swift */; };
 		AA0AC22EB453C28CE745A69D /* CatchLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EE2EDED0D4B60399FC77DC /* CatchLogView.swift */; };
+		AEA0D5E7F800069600CB1BAE /* HatchGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81534D8E77E51CA6738AFEFA /* HatchGuideView.swift */; };
 		B3E4DADA5F371866783FDE9E /* HistoricalDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64832F6292833CD6B760DF8A /* HistoricalDataRepository.swift */; };
 		B796408F2D424311C8F4DFF1 /* FishyFriendGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B65FCBD9517D60AC6311BC /* FishyFriendGuideApp.swift */; };
 		C8384CC14FE43D23CF5E15FB /* RecommendationEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE323F0D3FEACC2A34873C1 /* RecommendationEngineTests.swift */; };
@@ -45,9 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D9664591DF164C8A244143C /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
 		14A398F26520C00A2411B763 /* Regulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regulation.swift; sourceTree = "<group>"; };
 		21A24CF98BF615788AC2764A /* historical_catch_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = historical_catch_data.json; sourceTree = "<group>"; };
 		27EE2EDED0D4B60399FC77DC /* CatchLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchLogView.swift; sourceTree = "<group>"; };
+		2D0C645F962170F7B7C9B13A /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		33A8D08DBDF038960DA8E4B4 /* Waterway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterway.swift; sourceTree = "<group>"; };
 		3A40CA8DE8B90E3D55DE790D /* RegulationRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulationRepositoryTests.swift; sourceTree = "<group>"; };
 		3B0EF2F6B3667AF597966BDB /* FishingRecommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingRecommendation.swift; sourceTree = "<group>"; };
@@ -61,6 +69,7 @@
 		64832F6292833CD6B760DF8A /* HistoricalDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalDataRepository.swift; sourceTree = "<group>"; };
 		6B3171EC9966E4D642E270F8 /* FishyFriendGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishyFriendGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79492CAAB9656895B7F235BF /* CatchRecordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchRecordRepository.swift; sourceTree = "<group>"; };
+		81534D8E77E51CA6738AFEFA /* HatchGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatchGuideView.swift; sourceTree = "<group>"; };
 		822FD4000DCA06D92F4C62D8 /* RepositoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocols.swift; sourceTree = "<group>"; };
 		8BFF41D4253EBA0F8A67ABBC /* CatchEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchEntryView.swift; sourceTree = "<group>"; };
 		9830E35D2E1E1882AC88902A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -70,8 +79,11 @@
 		C8EDEB8DECABF50C4054B93F /* western_wa_waterways.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = western_wa_waterways.json; sourceTree = "<group>"; };
 		D325B35C9EC498EEA4305E8A /* RegulationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulationRepository.swift; sourceTree = "<group>"; };
 		DE258800140EBC2E7DFE9074 /* RiverListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverListView.swift; sourceTree = "<group>"; };
+		E1F031A6163A4AD1CFE41B3A /* HistoricalCatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalCatchesView.swift; sourceTree = "<group>"; };
+		E970AC27369935793777CE0E /* MapWaterwaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWaterwaysView.swift; sourceTree = "<group>"; };
 		F1B65FCBD9517D60AC6311BC /* FishyFriendGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishyFriendGuideApp.swift; sourceTree = "<group>"; };
 		F36C6203E3EF324B499D7F73 /* WaterwayRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterwayRepository.swift; sourceTree = "<group>"; };
+		F559982E44C0DD3E26065F3D /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		FE4578E55CD07282C80BF681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				F9DE6CBCEEAE7FE461F382E9 /* Components */,
+				38F2A0D2BEA47B38414C4819 /* DesignSystem */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -88,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				41B251C44785454C4C1FA88E /* AppEnvironment.swift */,
+				0D9664591DF164C8A244143C /* AppNavigation.swift */,
 				56F755E4B9E421F0BB56E549 /* ContentView.swift */,
 				F1B65FCBD9517D60AC6311BC /* FishyFriendGuideApp.swift */,
 			);
@@ -114,6 +128,14 @@
 				EA907210431A160FC278DE7F /* Resources */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		38F2A0D2BEA47B38414C4819 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				F559982E44C0DD3E26065F3D /* DesignSystem.swift */,
+			);
+			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 		444302C9BA1A1BDDB4EE7D2F /* Engine */ = {
@@ -152,10 +174,21 @@
 			children = (
 				E7BA4A0128E6A22861447775 /* CatchLog */,
 				F4F45257DFBEDD106CF025D2 /* Dashboard */,
+				60ABEA74D1D8819BF410DA6F /* HatchGuide */,
+				BCF472DD4E967A5832628F42 /* MapWaterways */,
 				BB31CCBE2DBEBDAA1613CFDB /* Regulations */,
 				510802F69E8879833A226C40 /* RiverBrowser */,
+				DA805EA46BF3EC949569A16E /* Weather */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		60ABEA74D1D8819BF410DA6F /* HatchGuide */ = {
+			isa = PBXGroup;
+			children = (
+				81534D8E77E51CA6738AFEFA /* HatchGuideView.swift */,
+			);
+			path = HatchGuide;
 			sourceTree = "<group>";
 		};
 		714FAC8BBC14F4BAD201B971 /* FishyFriendGuideTests */ = {
@@ -184,6 +217,14 @@
 			path = Regulations;
 			sourceTree = "<group>";
 		};
+		BCF472DD4E967A5832628F42 /* MapWaterways */ = {
+			isa = PBXGroup;
+			children = (
+				E970AC27369935793777CE0E /* MapWaterwaysView.swift */,
+			);
+			path = MapWaterways;
+			sourceTree = "<group>";
+		};
 		D0FD97222803B6AA270493A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,11 +236,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DA805EA46BF3EC949569A16E /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				2D0C645F962170F7B7C9B13A /* WeatherView.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 		E7BA4A0128E6A22861447775 /* CatchLog */ = {
 			isa = PBXGroup;
 			children = (
 				8BFF41D4253EBA0F8A67ABBC /* CatchEntryView.swift */,
 				27EE2EDED0D4B60399FC77DC /* CatchLogView.swift */,
+				E1F031A6163A4AD1CFE41B3A /* HistoricalCatchesView.swift */,
 			);
 			path = CatchLog;
 			sourceTree = "<group>";
@@ -327,15 +377,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ACDF621EF558E8E68F9BC61 /* AppEnvironment.swift in Sources */,
+				5F37982251B5D95B001D5834 /* AppNavigation.swift in Sources */,
 				0F6833ED342E783391AA9DE8 /* CatchEntryView.swift in Sources */,
 				AA0AC22EB453C28CE745A69D /* CatchLogView.swift in Sources */,
 				794D045CC3DDF1ACBF191CA0 /* CatchRecord.swift in Sources */,
 				71D006267871ECB9B748CC3D /* CatchRecordRepository.swift in Sources */,
 				D59E8B9BDF95B4C2E3C57628 /* ContentView.swift in Sources */,
 				95BC2B2DB0BF985E27998B0A /* DashboardView.swift in Sources */,
+				45CD8F5AE3901481525504AB /* DesignSystem.swift in Sources */,
 				ED35AF5C59C9D7225B35AD56 /* FishingRecommendation.swift in Sources */,
 				B796408F2D424311C8F4DFF1 /* FishyFriendGuideApp.swift in Sources */,
+				AEA0D5E7F800069600CB1BAE /* HatchGuideView.swift in Sources */,
+				987DC3860FEEEF59D7BE6227 /* HistoricalCatchesView.swift in Sources */,
 				B3E4DADA5F371866783FDE9E /* HistoricalDataRepository.swift in Sources */,
+				55CDFC71506FB42C1AD27025 /* MapWaterwaysView.swift in Sources */,
 				6C330E5DF7EF24C421E19D37 /* RecommendationCard.swift in Sources */,
 				FEC347480F4D8A5C0FE8DC16 /* RecommendationEngine.swift in Sources */,
 				99E32B268579C9AAE56E6702 /* Regulation.swift in Sources */,
@@ -346,6 +401,7 @@
 				48E7E482ED8B2DF1F9CA2A5D /* RiverListView.swift in Sources */,
 				1C5C04AB8385E196109B152A /* Waterway.swift in Sources */,
 				E43292A17B620AF4EE91C285 /* WaterwayRepository.swift in Sources */,
+				2FE62811224EDD5AC9C9CF74 /* WeatherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
