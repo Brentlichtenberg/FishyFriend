@@ -1,0 +1,258 @@
+{
+  "metadata": {
+    "sources": ["2021 WA Sport Catch Report", "2025 Fishing Guide Logbook"],
+    "dataYears": [2020, 2021, 2022, 2023, 2024, 2025]
+  },
+  "monthlyPatterns": [
+    {
+      "waterwayId": "cowlitz-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.1, 0.9, 0.8, 0.2, 0.1, 0.1, 0.1, 0.2, 0.5, 0.9, 0.8, 0.4],
+      "peakMonth": 2,
+      "peakDay": 28,
+      "avgTripsPerYear": 530,
+      "totalEncounters2021": 4926,
+      "notes": "Summer run (S) peaks Sep-Oct. Winter run (W) peaks Nov-Jan. Combined 2021: summer 4926, winter 7679."
+    },
+    {
+      "waterwayId": "cowlitz-river",
+      "species": "Salmon",
+      "monthlyIndex": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.9, 0.8, 0.4, 0.0],
+      "peakMonth": 9,
+      "peakDay": 11,
+      "avgTripsPerYear": 200,
+      "totalEncounters2021": 0,
+      "notes": "Coho run peaks September-October."
+    },
+    {
+      "waterwayId": "sol-duc-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.8, 0.9, 0.7, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.2, 0.4, 0.6],
+      "peakMonth": 2,
+      "peakDay": 9,
+      "avgTripsPerYear": 447,
+      "totalEncounters2021": 717,
+      "notes": "Winter steelhead dominant. Peak Feb-Mar. 2021: summer 84, winter 717."
+    },
+    {
+      "waterwayId": "hoh-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.7, 0.8, 0.6, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.2, 0.4, 0.5],
+      "peakMonth": 3,
+      "peakDay": 6,
+      "avgTripsPerYear": 403,
+      "totalEncounters2021": 37,
+      "notes": "Wild steelhead destination. Winter peak Jan-Mar. 2021 catch: 9 summer, 28 winter."
+    },
+    {
+      "waterwayId": "bogachiel-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.7, 0.8, 0.6, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.2, 0.3, 0.5],
+      "peakMonth": 3,
+      "peakDay": 5,
+      "avgTripsPerYear": 205,
+      "totalEncounters2021": 466,
+      "notes": "Winter steelhead. Peak Jan-Mar. 2021 catch: Bogachiel 466."
+    },
+    {
+      "waterwayId": "calawah-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.5, 0.7, 0.5, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.2, 0.3, 0.4],
+      "peakMonth": 2,
+      "peakDay": 15,
+      "avgTripsPerYear": 80,
+      "totalEncounters2021": 292,
+      "notes": "Tributary to Bogachiel. 2021: summer 69, winter 223."
+    },
+    {
+      "waterwayId": "chehalis-river",
+      "species": "Salmon",
+      "monthlyIndex": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.7, 0.9, 0.8, 0.0],
+      "peakMonth": 10,
+      "peakDay": 9,
+      "avgTripsPerYear": 155,
+      "totalEncounters2021": 0,
+      "notes": "Coho peak Oct-Nov. 2024 guide activity peaked Nov 7 with 1368 encounters."
+    },
+    {
+      "waterwayId": "chehalis-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.2, 0.3, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.3, 0.6, 0.4],
+      "peakMonth": 11,
+      "peakDay": 15,
+      "avgTripsPerYear": 80,
+      "totalEncounters2021": 450,
+      "notes": "2021: summer 450, winter 0. Winter run Oct-Feb."
+    },
+    {
+      "waterwayId": "humptulips-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.3, 0.4, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.3, 0.5, 0.4],
+      "peakMonth": 1,
+      "peakDay": 20,
+      "avgTripsPerYear": 60,
+      "totalEncounters2021": 67,
+      "notes": "2021: summer 54, winter 13."
+    },
+    {
+      "waterwayId": "wynoochee-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.1, 0.2, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.3, 0.5, 0.3],
+      "peakMonth": 11,
+      "peakDay": 15,
+      "avgTripsPerYear": 40,
+      "totalEncounters2021": 439,
+      "notes": "2021: summer 439. Peak Oct-Nov."
+    },
+    {
+      "waterwayId": "kalama-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.4, 0.5, 0.4, 0.1, 0.1, 0.2, 0.3, 0.3, 0.3, 0.5, 0.7, 0.5],
+      "peakMonth": 11,
+      "peakDay": 15,
+      "avgTripsPerYear": 120,
+      "totalEncounters2021": 386,
+      "notes": "Summer and winter steelhead. 2021: summer 85, winter 301. Year-round fishery."
+    },
+    {
+      "waterwayId": "lewis-river-north",
+      "species": "Steelhead",
+      "monthlyIndex": [0.2, 0.3, 0.2, 0.1, 0.1, 0.3, 0.5, 0.6, 0.5, 0.4, 0.4, 0.3],
+      "peakMonth": 8,
+      "peakDay": 15,
+      "avgTripsPerYear": 80,
+      "totalEncounters2021": 566,
+      "notes": "2021: summer 531, winter 35. Strong summer run Jul-Sep."
+    },
+    {
+      "waterwayId": "washougal-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.3, 0.4, 0.3, 0.0, 0.0, 0.0, 0.0, 0.1, 0.2, 0.4, 0.5, 0.4],
+      "peakMonth": 11,
+      "peakDay": 15,
+      "avgTripsPerYear": 50,
+      "totalEncounters2021": 99,
+      "notes": "2021: summer 23, winter 76."
+    },
+    {
+      "waterwayId": "elochoman-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.2, 0.3, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.4, 0.6, 0.4],
+      "peakMonth": 11,
+      "peakDay": 1,
+      "avgTripsPerYear": 30,
+      "totalEncounters2021": 597,
+      "notes": "2021: winter 597. Peak Oct-Nov."
+    },
+    {
+      "waterwayId": "skykomish-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.5, 0.6, 0.3, 0.0, 0.0, 0.2, 0.3, 0.2, 0.2, 0.4, 0.8, 0.6],
+      "peakMonth": 11,
+      "peakDay": 15,
+      "avgTripsPerYear": 150,
+      "totalEncounters2021": 886,
+      "notes": "2021: summer 263, winter 623. Major Puget Sound steelhead river."
+    },
+    {
+      "waterwayId": "skykomish-river",
+      "species": "Salmon",
+      "monthlyIndex": [0.0, 0.0, 0.0, 0.0, 0.0, 0.7, 0.6, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "peakMonth": 6,
+      "peakDay": 25,
+      "avgTripsPerYear": 50,
+      "totalEncounters2021": 0,
+      "notes": "Summer Chinook Jun 10-Jul 13. Anti-snagging, night closure rules."
+    },
+    {
+      "waterwayId": "snoqualmie-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.4, 0.5, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.3, 0.5],
+      "peakMonth": 2,
+      "peakDay": 15,
+      "avgTripsPerYear": 80,
+      "totalEncounters2021": 65,
+      "notes": "2021: winter 65. Peak Dec-Feb."
+    },
+    {
+      "waterwayId": "tokul-creek",
+      "species": "Steelhead",
+      "monthlyIndex": [0.5, 0.6, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.7],
+      "peakMonth": 2,
+      "peakDay": 1,
+      "avgTripsPerYear": 60,
+      "totalEncounters2021": 342,
+      "notes": "2021: winter 335, summer 7. Dec-Feb. Anti-snagging. Closed 5pm-7am."
+    },
+    {
+      "waterwayId": "wallace-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.4, 0.5, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.5, 0.5],
+      "peakMonth": 2,
+      "peakDay": 1,
+      "avgTripsPerYear": 50,
+      "totalEncounters2021": 190,
+      "notes": "2021: summer 28, winter 162."
+    },
+    {
+      "waterwayId": "stillaguamish-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.7, 0.8, 0.6, 0.1],
+      "peakMonth": 10,
+      "peakDay": 15,
+      "avgTripsPerYear": 60,
+      "totalEncounters2021": 78,
+      "notes": "2021: winter 78. Summer open season Jun-Nov. Night closure."
+    },
+    {
+      "waterwayId": "stillaguamish-north",
+      "species": "Steelhead",
+      "monthlyIndex": [0.3, 0.4, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.5, 0.4],
+      "peakMonth": 2,
+      "peakDay": 1,
+      "avgTripsPerYear": 40,
+      "totalEncounters2021": 345,
+      "notes": "2021: summer 17, winter 328."
+    },
+    {
+      "waterwayId": "willapa-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.1, 0.2, 0.1, 0.0, 0.0, 0.1, 0.2, 0.1, 0.1, 0.3, 0.5, 0.4],
+      "peakMonth": 11,
+      "peakDay": 1,
+      "avgTripsPerYear": 20,
+      "totalEncounters2021": 144,
+      "notes": "2021: summer 72, winter 72."
+    },
+    {
+      "waterwayId": "naselle-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.2, 0.3, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.3, 0.5, 0.3],
+      "peakMonth": 11,
+      "peakDay": 1,
+      "avgTripsPerYear": 15,
+      "totalEncounters2021": 148,
+      "notes": "2021: summer 9, winter 139."
+    },
+    {
+      "waterwayId": "green-duwamish-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.1, 0.2, 0.1, 0.0, 0.0, 0.2, 0.3, 0.3, 0.2, 0.2, 0.3, 0.2],
+      "peakMonth": 6,
+      "peakDay": 15,
+      "avgTripsPerYear": 30,
+      "totalEncounters2021": 72,
+      "notes": "2021: summer 66, winter 6."
+    },
+    {
+      "waterwayId": "puyallup-river",
+      "species": "Steelhead",
+      "monthlyIndex": [0.1, 0.2, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1],
+      "peakMonth": 2,
+      "peakDay": 1,
+      "avgTripsPerYear": 10,
+      "totalEncounters2021": 1,
+      "notes": "2021: summer 1."
+    }
+  ]
+}

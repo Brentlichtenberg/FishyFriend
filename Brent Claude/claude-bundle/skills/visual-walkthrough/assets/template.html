@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>__TITLE__</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fdfdfd;
+      --fg: #1a1a1a;
+      --muted: #5f6b7a;
+      --border: #e5e7eb;
+      --accent: #0969da;
+      --code-bg: #f6f8fa;
+      --code-fg: #1f2328;
+      --nav-bg: #fafbfc;
+      --table-alt: #f6f8fa;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --fg: #e6edf3;
+        --muted: #7d8590;
+        --border: #30363d;
+        --accent: #58a6ff;
+        --code-bg: #161b22;
+        --code-fg: #c9d1d9;
+        --nav-bg: #0b0e13;
+        --table-alt: #151a21;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      max-width: 1400px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      nav.toc { display: none; }
+    }
+    nav.toc {
+      position: sticky;
+      top: 0;
+      align-self: start;
+      max-height: 100vh;
+      overflow-y: auto;
+      padding: 2.5rem 1rem 2rem 2rem;
+      border-right: 1px solid var(--border);
+      background: var(--nav-bg);
+      font-size: 0.88rem;
+    }
+    nav.toc .toc-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+    nav.toc a {
+      display: block;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0.3rem 0 0.3rem 0.8rem;
+      border-left: 2px solid transparent;
+      margin-left: -0.8rem;
+      transition: color 120ms ease, border-color 120ms ease;
+      line-height: 1.4;
+    }
+    nav.toc a:hover { color: var(--fg); }
+    nav.toc a.active {
+      color: var(--accent);
+      border-left-color: var(--accent);
+    }
+    nav.toc a.h3 {
+      padding-left: 1.8rem;
+      margin-left: -1.8rem;
+      font-size: 0.82rem;
+    }
+    main {
+      padding: 3rem 3rem 6rem;
+      max-width: 76ch;
+      width: 100%;
+    }
+    main h1 {
+      margin: 0 0 1.5rem;
+      font-size: 2.2rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+    main h2 {
+      margin-top: 3.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 1.5rem;
+      letter-spacing: -0.01em;
+      font-weight: 600;
+    }
+    main h3 {
+      margin-top: 2.2rem;
+      margin-bottom: 0.7rem;
+      font-size: 1.18rem;
+      font-weight: 600;
+    }
+    main h4 {
+      margin-top: 1.6rem;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    main p { margin: 1rem 0; }
+    main a { color: var(--accent); text-decoration: none; }
+    main a:hover { text-decoration: underline; }
+    main ul, main ol { padding-left: 1.5rem; }
+    main li { margin: 0.35rem 0; }
+    main code {
+      font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace;
+      font-size: 0.9em;
+      background: var(--code-bg);
+      color: var(--code-fg);
+      padding: 0.12rem 0.4rem;
+      border-radius: 4px;
+    }
+    main pre {
+      background: var(--code-bg);
+      color: var(--code-fg);
+      padding: 1rem 1.1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.87rem;
+      line-height: 1.55;
+      border: 1px solid var(--border);
+    }
+    main pre code {
+      background: none;
+      padding: 0;
+      font-size: inherit;
+    }
+    main blockquote {
+      margin: 1.5rem 0;
+      padding: 0.2rem 1rem;
+      border-left: 3px solid var(--accent);
+      color: var(--muted);
+      background: var(--nav-bg);
+      border-radius: 0 6px 6px 0;
+    }
+    main table {
+      border-collapse: collapse;
+      margin: 1.2rem 0;
+      font-size: 0.95rem;
+      width: 100%;
+    }
+    main th, main td {
+      border: 1px solid var(--border);
+      padding: 0.55rem 0.8rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    main th { background: var(--nav-bg); font-weight: 600; }
+    main tr:nth-child(even) td { background: var(--table-alt); }
+    main hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 3rem 0;
+    }
+    .mermaid {
+      margin: 2rem 0;
+      padding: 1rem;
+      text-align: center;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    .mermaid-error {
+      padding: 1rem;
+      border: 1px solid #d1242f;
+      background: rgba(209, 36, 47, 0.05);
+      color: #d1242f;
+      border-radius: 6px;
+      font-family: ui-monospace, monospace;
+      font-size: 0.85rem;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <nav class="toc" id="toc"><div class="toc-title">Contents</div></nav>
+    <main id="content"><p style="color: var(--muted);">Rendering…</p></main>
+  </div>
+
+  <script id="md-source" type="text/markdown">__MARKDOWN__</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+  <script>
+    (function () {
+      // Route ```mermaid fences into <div class="mermaid"> blocks before
+      // markdown parsing, so Mermaid.js can pick them up after render.
+      marked.use({
+        renderer: {
+          code(code, infostring) {
+            const lang = (infostring || '').trim().split(/\s+/)[0].toLowerCase();
+            if (lang === 'mermaid') {
+              return '<div class="mermaid">' + code + '</div>';
+            }
+            return false; // fall through to default renderer
+          }
+        }
+      });
+      marked.setOptions({ gfm: true, breaks: false, headerIds: false });
+
+      const source = document.getElementById('md-source').textContent;
+      const content = document.getElementById('content');
+      content.innerHTML = marked.parse(source);
+
+      // Title from first H1
+      const firstH1 = content.querySelector('h1');
+      if (firstH1) document.title = firstH1.textContent.trim();
+
+      // Slugify and assign IDs to headings; build TOC from H2/H3
+      const toc = document.getElementById('toc');
+      const slugify = s => s.toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .trim()
+        .replace(/[\s_-]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+      const used = new Set();
+      const headings = content.querySelectorAll('h2, h3');
+      headings.forEach(h => {
+        let id = slugify(h.textContent) || 'section';
+        let n = 2;
+        let candidate = id;
+        while (used.has(candidate)) { candidate = id + '-' + n++; }
+        used.add(candidate);
+        h.id = candidate;
+        const a = document.createElement('a');
+        a.href = '#' + candidate;
+        a.textContent = h.textContent.trim();
+        a.className = h.tagName.toLowerCase();
+        toc.appendChild(a);
+      });
+
+      // Init Mermaid, matching the OS colour scheme
+      const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: dark ? 'dark' : 'default',
+        securityLevel: 'loose',
+        flowchart: { useMaxWidth: true, htmlLabels: true },
+        sequence: { useMaxWidth: true },
+        themeVariables: dark ? { background: '#0d1117' } : {}
+      });
+
+      // Scroll-spy: highlight the TOC entry for the heading nearest the top
+      const tocLinks = toc.querySelectorAll('a');
+      const linkByID = new Map();
+      tocLinks.forEach(l => linkByID.set(l.getAttribute('href').slice(1), l));
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            tocLinks.forEach(l => l.classList.remove('active'));
+            const link = linkByID.get(entry.target.id);
+            if (link) link.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-15% 0% -70% 0%' });
+      headings.forEach(h => observer.observe(h));
+
+      // React to colour-scheme changes (rare but cheap)
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        location.reload();
+      });
+    })();
+  </script>
+</body>
+</html>

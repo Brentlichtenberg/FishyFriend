@@ -1,0 +1,63 @@
+{
+  "recipes": [
+    {
+      "title": "Spaghetti Carbonara",
+      "ingredients": [
+        "200g spaghetti",
+        "100g pancetta",
+        "2 large eggs",
+        "50g pecorino cheese",
+        "50g parmesan",
+        "Black pepper",
+        "Salt"
+      ],
+      "instructions": [
+        "Cook the spaghetti in salted boiling water until al dente.",
+        "Fry the pancetta in a pan until crispy.",
+        "Beat the eggs in a bowl and mix in the grated cheeses.",
+        "Drain the spaghetti and add it to the pan with pancetta.",
+        "Remove from heat and quickly mix in the egg and cheese mixture.",
+        "Serve immediately with extra cheese and black pepper."
+      ]
+    },
+    {
+      "title": "Vegetable Stir Fry",
+      "ingredients": [
+        "1 cup broccoli florets",
+        "1 bell pepper, sliced",
+        "1 carrot, sliced",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 teaspoon sesame seeds"
+      ],
+      "instructions": [
+        "Heat olive oil in a pan over medium heat.",
+        "Add broccoli, bell pepper, and carrot, and stir-fry for 5-7 minutes.",
+        "Add soy sauce and stir well.",
+        "Sprinkle with sesame seeds before serving."
+      ]
+    },
+    {
+      "title": "Chocolate Chip Cookies",
+      "ingredients": [
+        "1 cup butter, softened",
+        "1 cup sugar",
+        "1 cup brown sugar",
+        "2 eggs",
+        "2 teaspoons vanilla extract",
+        "3 cups flour",
+        "1 teaspoon baking soda",
+        "2 cups chocolate chips"
+      ],
+      "instructions": [
+        "Preheat the oven to 350°F (175°C).",
+        "Cream together butter, sugar, and brown sugar.",
+        "Beat in eggs and vanilla.",
+        "Combine flour and baking soda, then gradually mix into the creamed mixture.",
+        "Stir in chocolate chips.",
+        "Drop by spoonfuls onto ungreased baking sheets.",
+        "Bake for 10-12 minutes or until golden brown."
+      ]
+    }
+  ]
+}

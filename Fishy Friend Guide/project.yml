@@ -1,0 +1,40 @@
+name: FishyFriendGuide
+options:
+  bundleIdPrefix: com.appsonapps
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+
+settings:
+  base:
+    SWIFT_VERSION: 5.10
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  FishyFriendGuide:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: FishyFriendGuide
+    resources:
+      - path: FishyFriendGuide/Data/Resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.appsonapps.fishyfriendguide
+        INFOPLIST_FILE: FishyFriendGuide/Info.plist
+        SWIFTDATA_ENABLED: YES
+
+  FishyFriendGuideTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: FishyFriendGuideTests
+    dependencies:
+      - target: FishyFriendGuide
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.appsonapps.fishyfriendguide.tests
+        GENERATE_INFOPLIST_FILE: YES

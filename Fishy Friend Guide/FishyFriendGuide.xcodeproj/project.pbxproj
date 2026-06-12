@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F6833ED342E783391AA9DE8 /* CatchEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF41D4253EBA0F8A67ABBC /* CatchEntryView.swift */; };
+		1848A8D3E2A40E329E4FE19A /* RiverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8BC7694C8674B393E92F9D /* RiverDetailView.swift */; };
+		1C5C04AB8385E196109B152A /* Waterway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A8D08DBDF038960DA8E4B4 /* Waterway.swift */; };
+		22B4D79AA739FCED42B27D0A /* RegulationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D325B35C9EC498EEA4305E8A /* RegulationRepository.swift */; };
+		23817CC5B593E70CF27F695F /* western_wa_waterways.json in Resources */ = {isa = PBXBuildFile; fileRef = C8EDEB8DECABF50C4054B93F /* western_wa_waterways.json */; };
+		399106D40BDF7CF75597A6A1 /* RegulationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589AA17E74B8C50DA46315F9 /* RegulationListView.swift */; };
+		48E7E482ED8B2DF1F9CA2A5D /* RiverListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE258800140EBC2E7DFE9074 /* RiverListView.swift */; };
+		5ACDF621EF558E8E68F9BC61 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B251C44785454C4C1FA88E /* AppEnvironment.swift */; };
+		6C330E5DF7EF24C421E19D37 /* RecommendationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203BE3D9BCDC3DD8F4C9165 /* RecommendationCard.swift */; };
+		6CC93903E2FE98F9A71D7C3B /* regulations_2025.json in Resources */ = {isa = PBXBuildFile; fileRef = A1DD30861FFAC1294BE5C568 /* regulations_2025.json */; };
+		71D006267871ECB9B748CC3D /* CatchRecordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79492CAAB9656895B7F235BF /* CatchRecordRepository.swift */; };
+		794D045CC3DDF1ACBF191CA0 /* CatchRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9D02EEC7C1C38519EBBBFA /* CatchRecord.swift */; };
+		80E342E88D16B0ED30A0E927 /* RegulationRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40CA8DE8B90E3D55DE790D /* RegulationRepositoryTests.swift */; };
+		95BC2B2DB0BF985E27998B0A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830E35D2E1E1882AC88902A /* DashboardView.swift */; };
+		99E32B268579C9AAE56E6702 /* Regulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A398F26520C00A2411B763 /* Regulation.swift */; };
+		AA0AC22EB453C28CE745A69D /* CatchLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EE2EDED0D4B60399FC77DC /* CatchLogView.swift */; };
+		B3E4DADA5F371866783FDE9E /* HistoricalDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64832F6292833CD6B760DF8A /* HistoricalDataRepository.swift */; };
+		B796408F2D424311C8F4DFF1 /* FishyFriendGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B65FCBD9517D60AC6311BC /* FishyFriendGuideApp.swift */; };
+		C8384CC14FE43D23CF5E15FB /* RecommendationEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE323F0D3FEACC2A34873C1 /* RecommendationEngineTests.swift */; };
+		C9F455D92CF39655D956BA4D /* RepositoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822FD4000DCA06D92F4C62D8 /* RepositoryProtocols.swift */; };
+		D59E8B9BDF95B4C2E3C57628 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F755E4B9E421F0BB56E549 /* ContentView.swift */; };
+		E43292A17B620AF4EE91C285 /* WaterwayRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36C6203E3EF324B499D7F73 /* WaterwayRepository.swift */; };
+		ED35AF5C59C9D7225B35AD56 /* FishingRecommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EF2F6B3667AF597966BDB /* FishingRecommendation.swift */; };
+		FC7B51A5908F781E73220B7F /* historical_catch_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 21A24CF98BF615788AC2764A /* historical_catch_data.json */; };
+		FEC347480F4D8A5C0FE8DC16 /* RecommendationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F20E0D9E968CFFAB43BC22E /* RecommendationEngine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8964FA76C31F6642B29261AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C05D7DA4FE9C5FEC3C7A9C8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D8CB54F275CB93622EDD641;
+			remoteInfo = FishyFriendGuide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14A398F26520C00A2411B763 /* Regulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regulation.swift; sourceTree = "<group>"; };
+		21A24CF98BF615788AC2764A /* historical_catch_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = historical_catch_data.json; sourceTree = "<group>"; };
+		27EE2EDED0D4B60399FC77DC /* CatchLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchLogView.swift; sourceTree = "<group>"; };
+		33A8D08DBDF038960DA8E4B4 /* Waterway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterway.swift; sourceTree = "<group>"; };
+		3A40CA8DE8B90E3D55DE790D /* RegulationRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulationRepositoryTests.swift; sourceTree = "<group>"; };
+		3B0EF2F6B3667AF597966BDB /* FishingRecommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingRecommendation.swift; sourceTree = "<group>"; };
+		41B251C44785454C4C1FA88E /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		4F9D02EEC7C1C38519EBBBFA /* CatchRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchRecord.swift; sourceTree = "<group>"; };
+		56F755E4B9E421F0BB56E549 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		589AA17E74B8C50DA46315F9 /* RegulationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulationListView.swift; sourceTree = "<group>"; };
+		5D8BC7694C8674B393E92F9D /* RiverDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverDetailView.swift; sourceTree = "<group>"; };
+		5ED39A056506F78DF1AD6002 /* FishyFriendGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishyFriendGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F20E0D9E968CFFAB43BC22E /* RecommendationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationEngine.swift; sourceTree = "<group>"; };
+		64832F6292833CD6B760DF8A /* HistoricalDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalDataRepository.swift; sourceTree = "<group>"; };
+		6B3171EC9966E4D642E270F8 /* FishyFriendGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishyFriendGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79492CAAB9656895B7F235BF /* CatchRecordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchRecordRepository.swift; sourceTree = "<group>"; };
+		822FD4000DCA06D92F4C62D8 /* RepositoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocols.swift; sourceTree = "<group>"; };
+		8BFF41D4253EBA0F8A67ABBC /* CatchEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchEntryView.swift; sourceTree = "<group>"; };
+		9830E35D2E1E1882AC88902A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A1DD30861FFAC1294BE5C568 /* regulations_2025.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = regulations_2025.json; sourceTree = "<group>"; };
+		B203BE3D9BCDC3DD8F4C9165 /* RecommendationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationCard.swift; sourceTree = "<group>"; };
+		BEE323F0D3FEACC2A34873C1 /* RecommendationEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationEngineTests.swift; sourceTree = "<group>"; };
+		C8EDEB8DECABF50C4054B93F /* western_wa_waterways.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = western_wa_waterways.json; sourceTree = "<group>"; };
+		D325B35C9EC498EEA4305E8A /* RegulationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulationRepository.swift; sourceTree = "<group>"; };
+		DE258800140EBC2E7DFE9074 /* RiverListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverListView.swift; sourceTree = "<group>"; };
+		F1B65FCBD9517D60AC6311BC /* FishyFriendGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishyFriendGuideApp.swift; sourceTree = "<group>"; };
+		F36C6203E3EF324B499D7F73 /* WaterwayRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterwayRepository.swift; sourceTree = "<group>"; };
+		FE4578E55CD07282C80BF681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0BABD6D19BA26C805ACA2A08 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE6CBCEEAE7FE461F382E9 /* Components */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		144A39F9A9CA3443D9322748 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				41B251C44785454C4C1FA88E /* AppEnvironment.swift */,
+				56F755E4B9E421F0BB56E549 /* ContentView.swift */,
+				F1B65FCBD9517D60AC6311BC /* FishyFriendGuideApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		288DD19C42202356B56F47E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5ED39A056506F78DF1AD6002 /* FishyFriendGuide.app */,
+				6B3171EC9966E4D642E270F8 /* FishyFriendGuideTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3607875A705C0E793451133C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				79492CAAB9656895B7F235BF /* CatchRecordRepository.swift */,
+				64832F6292833CD6B760DF8A /* HistoricalDataRepository.swift */,
+				D325B35C9EC498EEA4305E8A /* RegulationRepository.swift */,
+				822FD4000DCA06D92F4C62D8 /* RepositoryProtocols.swift */,
+				F36C6203E3EF324B499D7F73 /* WaterwayRepository.swift */,
+				EA907210431A160FC278DE7F /* Resources */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		444302C9BA1A1BDDB4EE7D2F /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				5F20E0D9E968CFFAB43BC22E /* RecommendationEngine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		4FD3BF5F137F20DD586A1850 /* FishyFriendGuide */ = {
+			isa = PBXGroup;
+			children = (
+				FE4578E55CD07282C80BF681 /* Info.plist */,
+				144A39F9A9CA3443D9322748 /* App */,
+				3607875A705C0E793451133C /* Data */,
+				444302C9BA1A1BDDB4EE7D2F /* Engine */,
+				5ECBCD5FED5BA2431BBB6A11 /* Features */,
+				D0FD97222803B6AA270493A1 /* Models */,
+				0BABD6D19BA26C805ACA2A08 /* Shared */,
+			);
+			path = FishyFriendGuide;
+			sourceTree = "<group>";
+		};
+		510802F69E8879833A226C40 /* RiverBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				5D8BC7694C8674B393E92F9D /* RiverDetailView.swift */,
+				DE258800140EBC2E7DFE9074 /* RiverListView.swift */,
+			);
+			path = RiverBrowser;
+			sourceTree = "<group>";
+		};
+		5ECBCD5FED5BA2431BBB6A11 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E7BA4A0128E6A22861447775 /* CatchLog */,
+				F4F45257DFBEDD106CF025D2 /* Dashboard */,
+				BB31CCBE2DBEBDAA1613CFDB /* Regulations */,
+				510802F69E8879833A226C40 /* RiverBrowser */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		714FAC8BBC14F4BAD201B971 /* FishyFriendGuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEE323F0D3FEACC2A34873C1 /* RecommendationEngineTests.swift */,
+				3A40CA8DE8B90E3D55DE790D /* RegulationRepositoryTests.swift */,
+			);
+			path = FishyFriendGuideTests;
+			sourceTree = "<group>";
+		};
+		7A4BBA2DEC11DC8107B467F2 = {
+			isa = PBXGroup;
+			children = (
+				4FD3BF5F137F20DD586A1850 /* FishyFriendGuide */,
+				714FAC8BBC14F4BAD201B971 /* FishyFriendGuideTests */,
+				288DD19C42202356B56F47E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB31CCBE2DBEBDAA1613CFDB /* Regulations */ = {
+			isa = PBXGroup;
+			children = (
+				589AA17E74B8C50DA46315F9 /* RegulationListView.swift */,
+			);
+			path = Regulations;
+			sourceTree = "<group>";
+		};
+		D0FD97222803B6AA270493A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F9D02EEC7C1C38519EBBBFA /* CatchRecord.swift */,
+				3B0EF2F6B3667AF597966BDB /* FishingRecommendation.swift */,
+				14A398F26520C00A2411B763 /* Regulation.swift */,
+				33A8D08DBDF038960DA8E4B4 /* Waterway.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7BA4A0128E6A22861447775 /* CatchLog */ = {
+			isa = PBXGroup;
+			children = (
+				8BFF41D4253EBA0F8A67ABBC /* CatchEntryView.swift */,
+				27EE2EDED0D4B60399FC77DC /* CatchLogView.swift */,
+			);
+			path = CatchLog;
+			sourceTree = "<group>";
+		};
+		EA907210431A160FC278DE7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				21A24CF98BF615788AC2764A /* historical_catch_data.json */,
+				A1DD30861FFAC1294BE5C568 /* regulations_2025.json */,
+				C8EDEB8DECABF50C4054B93F /* western_wa_waterways.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4F45257DFBEDD106CF025D2 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				9830E35D2E1E1882AC88902A /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F9DE6CBCEEAE7FE461F382E9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B203BE3D9BCDC3DD8F4C9165 /* RecommendationCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D8CB54F275CB93622EDD641 /* FishyFriendGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320B00F38E9767849712E23B /* Build configuration list for PBXNativeTarget "FishyFriendGuide" */;
+			buildPhases = (
+				707DF617A32B892C0F01A292 /* Sources */,
+				19E22924FB9FA93569938D4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FishyFriendGuide;
+			packageProductDependencies = (
+			);
+			productName = FishyFriendGuide;
+			productReference = 5ED39A056506F78DF1AD6002 /* FishyFriendGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73FA2B92D40239A15781FA19 /* FishyFriendGuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0441D320104C35E14E7FEA26 /* Build configuration list for PBXNativeTarget "FishyFriendGuideTests" */;
+			buildPhases = (
+				EFAEC639F92320296C6DEB18 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9950155C5D545C7A03BC9BD /* PBXTargetDependency */,
+			);
+			name = FishyFriendGuideTests;
+			packageProductDependencies = (
+			);
+			productName = FishyFriendGuideTests;
+			productReference = 6B3171EC9966E4D642E270F8 /* FishyFriendGuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C05D7DA4FE9C5FEC3C7A9C8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					0D8CB54F275CB93622EDD641 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					73FA2B92D40239A15781FA19 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D8DC0E4E32C48FBF5A06C922 /* Build configuration list for PBXProject "FishyFriendGuide" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7A4BBA2DEC11DC8107B467F2;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 288DD19C42202356B56F47E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D8CB54F275CB93622EDD641 /* FishyFriendGuide */,
+				73FA2B92D40239A15781FA19 /* FishyFriendGuideTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19E22924FB9FA93569938D4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7B51A5908F781E73220B7F /* historical_catch_data.json in Resources */,
+				6CC93903E2FE98F9A71D7C3B /* regulations_2025.json in Resources */,
+				23817CC5B593E70CF27F695F /* western_wa_waterways.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		707DF617A32B892C0F01A292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACDF621EF558E8E68F9BC61 /* AppEnvironment.swift in Sources */,
+				0F6833ED342E783391AA9DE8 /* CatchEntryView.swift in Sources */,
+				AA0AC22EB453C28CE745A69D /* CatchLogView.swift in Sources */,
+				794D045CC3DDF1ACBF191CA0 /* CatchRecord.swift in Sources */,
+				71D006267871ECB9B748CC3D /* CatchRecordRepository.swift in Sources */,
+				D59E8B9BDF95B4C2E3C57628 /* ContentView.swift in Sources */,
+				95BC2B2DB0BF985E27998B0A /* DashboardView.swift in Sources */,
+				ED35AF5C59C9D7225B35AD56 /* FishingRecommendation.swift in Sources */,
+				B796408F2D424311C8F4DFF1 /* FishyFriendGuideApp.swift in Sources */,
+				B3E4DADA5F371866783FDE9E /* HistoricalDataRepository.swift in Sources */,
+				6C330E5DF7EF24C421E19D37 /* RecommendationCard.swift in Sources */,
+				FEC347480F4D8A5C0FE8DC16 /* RecommendationEngine.swift in Sources */,
+				99E32B268579C9AAE56E6702 /* Regulation.swift in Sources */,
+				399106D40BDF7CF75597A6A1 /* RegulationListView.swift in Sources */,
+				22B4D79AA739FCED42B27D0A /* RegulationRepository.swift in Sources */,
+				C9F455D92CF39655D956BA4D /* RepositoryProtocols.swift in Sources */,
+				1848A8D3E2A40E329E4FE19A /* RiverDetailView.swift in Sources */,
+				48E7E482ED8B2DF1F9CA2A5D /* RiverListView.swift in Sources */,
+				1C5C04AB8385E196109B152A /* Waterway.swift in Sources */,
+				E43292A17B620AF4EE91C285 /* WaterwayRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFAEC639F92320296C6DEB18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8384CC14FE43D23CF5E15FB /* RecommendationEngineTests.swift in Sources */,
+				80E342E88D16B0ED30A0E927 /* RegulationRepositoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9950155C5D545C7A03BC9BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D8CB54F275CB93622EDD641 /* FishyFriendGuide */;
+			targetProxy = 8964FA76C31F6642B29261AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AC131D2C9D79DADD352D1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FishyFriendGuide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsonapps.fishyfriendguide;
+				SDKROOT = macosx;
+				SWIFTDATA_ENABLED = YES;
+			};
+			name = Debug;
+		};
+		73F57AD658E260E43E68BC65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsonapps.fishyfriendguide.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishyFriendGuide.app/Contents/MacOS/FishyFriendGuide";
+			};
+			name = Debug;
+		};
+		B8FBD25441BE81C141507B3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		D35F5EC01759D2CC7B7C2020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsonapps.fishyfriendguide.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishyFriendGuide.app/Contents/MacOS/FishyFriendGuide";
+			};
+			name = Release;
+		};
+		E913E21DAF544623C0BBE1B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		F1BE44F42604BF2A7D3D6204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FishyFriendGuide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsonapps.fishyfriendguide;
+				SDKROOT = macosx;
+				SWIFTDATA_ENABLED = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0441D320104C35E14E7FEA26 /* Build configuration list for PBXNativeTarget "FishyFriendGuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73F57AD658E260E43E68BC65 /* Debug */,
+				D35F5EC01759D2CC7B7C2020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		320B00F38E9767849712E23B /* Build configuration list for PBXNativeTarget "FishyFriendGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC131D2C9D79DADD352D1D6 /* Debug */,
+				F1BE44F42604BF2A7D3D6204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D8DC0E4E32C48FBF5A06C922 /* Build configuration list for PBXProject "FishyFriendGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E913E21DAF544623C0BBE1B2 /* Debug */,
+				B8FBD25441BE81C141507B3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C05D7DA4FE9C5FEC3C7A9C8B /* Project object */;
+}

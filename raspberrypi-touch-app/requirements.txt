@@ -1,0 +1,5 @@
+Tkinter is included with Python's standard library, so you don't need to install it separately. However, you may want to include other libraries that could be useful for your project. Here’s the contents for the requirements.txt file:
+
+Flask
+jsonschema
+Pillow

@@ -1,0 +1,355 @@
+[
+  {
+    "id": "hoh-river-steelhead",
+    "waterwayId": "hoh-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 6, "startDay": 1, "endMonth": 1, "endDay": 31 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": ["No internal combustion motors", "Single barbless hook only", "Bait prohibited"],
+    "minimumSize": null,
+    "notes": "Release wild steelhead. CRC 350. Anti-snagging rule applies."
+  },
+  {
+    "id": "hoh-river-trout",
+    "waterwayId": "hoh-river",
+    "species": "Trout",
+    "openDateRanges": [
+      { "startMonth": 6, "startDay": 1, "endMonth": 8, "endDay": 31 },
+      { "startMonth": 9, "startDay": 16, "endMonth": 4, "endDay": 30 }
+    ],
+    "bagLimit": 5,
+    "punchCardRequired": false,
+    "gearRestrictions": ["Single barbless hook only", "Bait prohibited"],
+    "minimumSize": 14,
+    "notes": "Cutthroat min size 14 in. Release wild rainbow trout."
+  },
+  {
+    "id": "sol-duc-river-steelhead",
+    "waterwayId": "sol-duc-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 6, "startDay": 1, "endMonth": 3, "endDay": 31 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": ["Single barbless hook only", "Bait prohibited"],
+    "minimumSize": null,
+    "notes": "CRC 406. Selective gear rules from concrete pump station at Sol Duc hatchery to Hwy 101."
+  },
+  {
+    "id": "sol-duc-river-salmon",
+    "waterwayId": "sol-duc-river",
+    "species": "Salmon",
+    "openDateRanges": [
+      { "startMonth": 9, "startDay": 1, "endMonth": 9, "endDay": 15 },
+      { "startMonth": 9, "startDay": 16, "endMonth": 12, "endDay": 15 }
+    ],
+    "bagLimit": 4,
+    "punchCardRequired": true,
+    "gearRestrictions": [],
+    "minimumSize": 12,
+    "notes": "Sept 1-15: daily limit 4, up to 3 adults including no more than 1 wild adult. Sept 16-Dec 15: daily limit 4, up to 3 adults, 1 wild adult. Release wild coho and sockeye."
+  },
+  {
+    "id": "bogachiel-steelhead",
+    "waterwayId": "bogachiel-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 5, "startDay": 25, "endMonth": 4, "endDay": 30 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": ["No internal combustion motors", "Single barbless hook only", "Bait prohibited"],
+    "minimumSize": null,
+    "notes": "CRC 398. From Hwy 101 Bridge to Olympic National Park boundary."
+  },
+  {
+    "id": "bogachiel-trout",
+    "waterwayId": "bogachiel-river",
+    "species": "Trout",
+    "openDateRanges": [
+      { "startMonth": 5, "startDay": 25, "endMonth": 4, "endDay": 30 }
+    ],
+    "bagLimit": 5,
+    "punchCardRequired": false,
+    "gearRestrictions": ["Bait prohibited"],
+    "minimumSize": 14,
+    "notes": "Cutthroat min size 14 in. Release wild rainbow trout."
+  },
+  {
+    "id": "humptulips-steelhead",
+    "waterwayId": "humptulips-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 5, "startDay": 25, "endMonth": 4, "endDay": 30 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": [],
+    "minimumSize": null,
+    "notes": "CRC 358. From mouth (Jessie Slough) to Hwy 101 Bridge."
+  },
+  {
+    "id": "chehalis-salmon",
+    "waterwayId": "chehalis-river",
+    "species": "Salmon",
+    "openDateRanges": [
+      { "startMonth": 8, "startDay": 1, "endMonth": 11, "endDay": 30 }
+    ],
+    "bagLimit": 6,
+    "punchCardRequired": true,
+    "gearRestrictions": ["Single-point barbless hooks required Aug 1-Nov 30", "Bait prohibited Aug 1-Sept 15"],
+    "minimumSize": null,
+    "notes": "CRC 317. From Fuller Bridge to South Elma Bridge. Two-pole allowed Aug 1-Dec 31."
+  },
+  {
+    "id": "chehalis-trout",
+    "waterwayId": "chehalis-river",
+    "species": "Trout",
+    "openDateRanges": [
+      { "startMonth": 5, "startDay": 25, "endMonth": 10, "endDay": 31 }
+    ],
+    "bagLimit": 5,
+    "punchCardRequired": false,
+    "gearRestrictions": [],
+    "minimumSize": null,
+    "notes": "Statewide min size and daily limit apply."
+  },
+  {
+    "id": "wynoochee-steelhead",
+    "waterwayId": "wynoochee-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 10, "startDay": 1, "endMonth": 3, "endDay": 31 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": [],
+    "minimumSize": null,
+    "notes": "CRC 337."
+  },
+  {
+    "id": "cowlitz-steelhead",
+    "waterwayId": "cowlitz-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 5, "startDay": 25, "endMonth": 4, "endDay": 30 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": [],
+    "minimumSize": null,
+    "notes": "CRC 561. Below Mayfield Dam. Both summer and winter steelhead runs. Peak winter run Oct-Jan."
+  },
+  {
+    "id": "cowlitz-salmon",
+    "waterwayId": "cowlitz-river",
+    "species": "Salmon",
+    "openDateRanges": [
+      { "startMonth": 8, "startDay": 1, "endMonth": 11, "endDay": 30 }
+    ],
+    "bagLimit": 6,
+    "punchCardRequired": true,
+    "gearRestrictions": [],
+    "minimumSize": null,
+    "notes": "Coho and Chinook. Check current emergency regulations."
+  },
+  {
+    "id": "kalama-steelhead-below",
+    "waterwayId": "kalama-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 5, "startDay": 25, "endMonth": 4, "endDay": 30 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": [],
+    "minimumSize": null,
+    "notes": "CRC 604. Below Modrow Bridge. Both summer and winter runs."
+  },
+  {
+    "id": "kalama-steelhead-above",
+    "waterwayId": "kalama-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 5, "startDay": 25, "endMonth": 4, "endDay": 30 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": ["Fly fishing only above Kalama Falls Hatchery"],
+    "minimumSize": null,
+    "notes": "CRC 603. Between Modrow Bridge and Kalama Falls Hatchery. Fly-only section upstream."
+  },
+  {
+    "id": "lewis-north-steelhead",
+    "waterwayId": "lewis-river-north",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 5, "startDay": 25, "endMonth": 4, "endDay": 30 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": [],
+    "minimumSize": null,
+    "notes": "CRC 615. Strong summer steelhead run."
+  },
+  {
+    "id": "washougal-steelhead",
+    "waterwayId": "washougal-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 5, "startDay": 25, "endMonth": 4, "endDay": 30 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": [],
+    "minimumSize": null,
+    "notes": "CRC 668. Wild winter steelhead river."
+  },
+  {
+    "id": "elochoman-steelhead",
+    "waterwayId": "elochoman-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 10, "startDay": 1, "endMonth": 3, "endDay": 31 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": [],
+    "minimumSize": null,
+    "notes": "CRC 584. Above and below Foster Rd Bridge."
+  },
+  {
+    "id": "skykomish-steelhead",
+    "waterwayId": "skykomish-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 10, "startDay": 13, "endMonth": 2, "endDay": 28 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": ["Single barbless hook only Oct 13-Nov 30", "Selective gear rules Oct 13-Nov 30"],
+    "minimumSize": null,
+    "notes": "CRC 844. Anti-snagging rule Oct 13-Nov 30. Night closure Oct 13-Nov 30."
+  },
+  {
+    "id": "skykomish-salmon",
+    "waterwayId": "skykomish-river",
+    "species": "Salmon",
+    "openDateRanges": [
+      { "startMonth": 6, "startDay": 10, "endMonth": 7, "endDay": 13 }
+    ],
+    "bagLimit": 4,
+    "punchCardRequired": true,
+    "gearRestrictions": ["Selective gear rules", "Anti-snagging rule", "Night closure"],
+    "minimumSize": 12,
+    "notes": "CRC 844. Daily limit 4, release all salmon except 1 wild adult. Release sockeye. June 10-July 13."
+  },
+  {
+    "id": "snoqualmie-steelhead",
+    "waterwayId": "snoqualmie-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 11, "startDay": 1, "endMonth": 2, "endDay": 28 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": [],
+    "minimumSize": null,
+    "notes": "CRC 852. Winter steelhead run."
+  },
+  {
+    "id": "tokul-steelhead",
+    "waterwayId": "tokul-creek",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 12, "startDay": 1, "endMonth": 2, "endDay": 15 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": ["Anti-snagging rule", "Closed daily 5pm-7am Dec 1-Feb 15"],
+    "minimumSize": null,
+    "notes": "CRC 856. From mouth to Fish Hatchery Rd Bridge."
+  },
+  {
+    "id": "stillaguamish-steelhead",
+    "waterwayId": "stillaguamish-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 8, "startDay": 1, "endMonth": 11, "endDay": 30 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": ["Night closure Aug-Nov"],
+    "minimumSize": null,
+    "notes": "CRC 876. Mainstem and sloughs downstream of Marine Drive. Anti-snagging rule."
+  },
+  {
+    "id": "stillaguamish-south-steelhead",
+    "waterwayId": "stillaguamish-south",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 11, "startDay": 1, "endMonth": 1, "endDay": 31 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": ["Anti-snagging rule Nov 1-Nov 30", "Night closure Nov 1-Nov 30"],
+    "minimumSize": null,
+    "notes": "CRC 874. From mouth to 400ft below Granite Falls fishway."
+  },
+  {
+    "id": "canyon-creek-stilly-steelhead",
+    "waterwayId": "canyon-creek-stilly",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 11, "startDay": 1, "endMonth": 1, "endDay": 31 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": ["Selective gear rules"],
+    "minimumSize": null,
+    "notes": "CRC 866. From mouth to forks."
+  },
+  {
+    "id": "green-duwamish-steelhead",
+    "waterwayId": "green-duwamish-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 5, "startDay": 25, "endMonth": 1, "endDay": 15 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": ["Selective gear rules"],
+    "minimumSize": null,
+    "notes": "CRC 746. King County. Summer and winter steelhead."
+  },
+  {
+    "id": "puyallup-steelhead",
+    "waterwayId": "puyallup-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 5, "startDay": 25, "endMonth": 1, "endDay": 15 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": ["Selective gear rules"],
+    "minimumSize": null,
+    "notes": "CRC 804. From Carbon River upstream."
+  },
+  {
+    "id": "willapa-steelhead",
+    "waterwayId": "willapa-river",
+    "species": "Steelhead",
+    "openDateRanges": [
+      { "startMonth": 10, "startDay": 1, "endMonth": 3, "endDay": 31 }
+    ],
+    "bagLimit": 2,
+    "punchCardRequired": true,
+    "gearRestrictions": [],
+    "minimumSize": null,
+    "notes": "CRC 424. Both summer and winter steelhead."
+  }
+]

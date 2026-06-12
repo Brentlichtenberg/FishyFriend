@@ -1,0 +1,39 @@
+{
+  "skill_name": "color-blending",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "The blue squares for black's control are way too dark compared to green for white. It feels like white is always dominating even when the control counts are equal. Can you fix the color balance so both sides look equally strong?",
+      "expected_output": "Should diagnose the luminance imbalance (green is 10x brighter than blue in sRGB), propose a perceptually uniform solution using OKLAB/OKLCH, and implement corrected color mapping in ColorMapper.swift that produces equal perceived brightness for equal control counts.",
+      "files": [
+        "BoardControl/Models/ColorMapper.swift",
+        "BoardControl/Views/BoardView.swift",
+        "BoardControl/Views/GameView.swift"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to try a completely different color scheme for the board. Instead of green/blue/red, I want something that looks more like a weather map or topographic heatmap — warm colors for white's territory and cool colors for black's. Make it perceptually uniform and colorblind-friendly.",
+      "expected_output": "Should propose a diverging color scale (warm/amber for white, cool/teal for black) designed in OKLCH space. Should implement the OKLCH conversion utilities and a new color mapping function. Should address all square categories (empty, attacked, defended, contested, king). The result should be colorblind-safe (avoiding red-green as primary distinction).",
+      "files": [
+        "BoardControl/Models/ColorMapper.swift"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "The contested squares where both sides have control look weird — I can't tell at a glance whether white or black is winning the fight for that square. How can we make contested squares more readable?",
+      "expected_output": "Should analyze why contested squares are hard to read (cyan is an unfamiliar encoding, and the two channels don't have intuitive 'who's winning' semantics). Should propose alternatives: diverging hue that shifts toward the dominant side, or luminance encoding where the dominant side's hue shows through more strongly. Should implement the change and explain the perceptual reasoning.",
+      "files": [
+        "BoardControl/Models/ColorMapper.swift"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "The board looks flat in the opening — most squares that have any control at all look about the same brightness. A square with 1 pawn reaching it looks almost identical to one with 4 pieces reaching it. I want to see the difference in intensity more clearly. How should we scale the colors?",
+      "expected_output": "Should identify the linear scaling as the problem and propose nonlinear transfer functions (power/gamma curves, logarithmic, sigmoid). Should explain why low counts need more visual space (the first piece matters most in chess). Should implement a scaling function and apply it across all color categories. Should recommend a specific gamma value and explain the tradeoff.",
+      "files": [
+        "BoardControl/Models/ColorMapper.swift"
+      ]
+    }
+  ]
+}
