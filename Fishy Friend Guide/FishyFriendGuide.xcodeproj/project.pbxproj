@@ -33,6 +33,7 @@
 		AEA0D5E7F800069600CB1BAE /* HatchGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81534D8E77E51CA6738AFEFA /* HatchGuideView.swift */; };
 		B3E4DADA5F371866783FDE9E /* HistoricalDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64832F6292833CD6B760DF8A /* HistoricalDataRepository.swift */; };
 		B796408F2D424311C8F4DFF1 /* FishyFriendGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B65FCBD9517D60AC6311BC /* FishyFriendGuideApp.swift */; };
+		C63856ECFA20C046F750114C /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = C2F322D98C565D00E62FBB5F /* AppIcon.icns */; };
 		C8384CC14FE43D23CF5E15FB /* RecommendationEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE323F0D3FEACC2A34873C1 /* RecommendationEngineTests.swift */; };
 		C9F455D92CF39655D956BA4D /* RepositoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822FD4000DCA06D92F4C62D8 /* RepositoryProtocols.swift */; };
 		D59E8B9BDF95B4C2E3C57628 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F755E4B9E421F0BB56E549 /* ContentView.swift */; };
@@ -81,6 +82,7 @@
 		A1DD30861FFAC1294BE5C568 /* regulations_2025.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = regulations_2025.json; sourceTree = "<group>"; };
 		B203BE3D9BCDC3DD8F4C9165 /* RecommendationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationCard.swift; sourceTree = "<group>"; };
 		BEE323F0D3FEACC2A34873C1 /* RecommendationEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationEngineTests.swift; sourceTree = "<group>"; };
+		C2F322D98C565D00E62FBB5F /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
 		C682C63D37C7F44CEAEBE183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8EDEB8DECABF50C4054B93F /* western_wa_waterways.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = western_wa_waterways.json; sourceTree = "<group>"; };
 		D325B35C9EC498EEA4305E8A /* RegulationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulationRepository.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		4FD3BF5F137F20DD586A1850 /* FishyFriendGuide */ = {
 			isa = PBXGroup;
 			children = (
+				C2F322D98C565D00E62FBB5F /* AppIcon.icns */,
 				C682C63D37C7F44CEAEBE183 /* Assets.xcassets */,
 				FE4578E55CD07282C80BF681 /* Info.plist */,
 				144A39F9A9CA3443D9322748 /* App */,
@@ -372,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C63856ECFA20C046F750114C /* AppIcon.icns in Resources */,
 				78452B4B93421CD2B0F1777D /* Assets.xcassets in Resources */,
 				FC7B51A5908F781E73220B7F /* historical_catch_data.json in Resources */,
 				6CC93903E2FE98F9A71D7C3B /* regulations_2025.json in Resources */,

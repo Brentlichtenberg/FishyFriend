@@ -21,6 +21,7 @@ targets:
     resources:
       - path: FishyFriendGuide/Data/Resources
       - path: FishyFriendGuide/Assets.xcassets
+      - path: FishyFriendGuide/AppIcon.icns
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.appsonapps.fishyfriendguide
