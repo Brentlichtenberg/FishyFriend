@@ -101,20 +101,17 @@ struct SidebarNavItem: View {
                 Image(systemName: section.icon)
                     .font(.system(size: 15, weight: .medium))
                     .frame(width: 20)
-                    .foregroundStyle(isSelected ? .appPrimary : .onSurfaceVariant)
+                    .foregroundStyle(isSelected ? Color.appPrimary : Color.onSurfaceVariant)
                 Text(section.rawValue)
                     .font(.labelLg)
-                    .foregroundStyle(isSelected ? .appPrimary : .onSurfaceVariant)
+                    .foregroundStyle(isSelected ? Color.appPrimary : Color.onSurfaceVariant)
                 Spacer()
             }
             .padding(.horizontal, 12)
             .padding(.vertical, 9)
-            .background(
-                RoundedRectangle(cornerRadius: AppRadius.md)
-                    .fill(isSelected ? Color.appPrimary.opacity(0.1) : Color.clear)
-            )
         }
         .buttonStyle(.plain)
+        .sidebarItemGlass(isSelected: isSelected)
     }
 }
 
@@ -146,23 +143,30 @@ struct FieldEditionCard: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("FIELD EDITION")
                 .font(.labelMd)
-                .foregroundStyle(.appPrimary)
+                .foregroundStyle(Color.appPrimary)
             Text("Get topographic maps and live hatch alerts.")
                 .font(.system(size: 12))
-                .foregroundStyle(.onSurfaceVariant)
+                .foregroundStyle(Color.onSurfaceVariant)
+            upgradeButton
+        }
+        .padding(12)
+        .floatGlass(tint: Color.appPrimary.opacity(0.08))
+    }
+
+    @ViewBuilder
+    private var upgradeButton: some View {
+        if #available(macOS 26, *) {
+            Button("Upgrade to Field Edition") { }
+                .buttonStyle(.glassProminent)
+                .controlSize(.small)
+                .frame(maxWidth: .infinity)
+        } else {
             Button("Upgrade to Field Edition") { }
                 .buttonStyle(.borderedProminent)
                 .tint(.appPrimary)
                 .controlSize(.small)
                 .frame(maxWidth: .infinity)
         }
-        .padding(12)
-        .background(Color.appPrimary.opacity(0.06))
-        .clipShape(RoundedRectangle(cornerRadius: AppRadius.lg))
-        .overlay(
-            RoundedRectangle(cornerRadius: AppRadius.lg)
-                .stroke(Color.appPrimary.opacity(0.15), lineWidth: 1)
-        )
     }
 }
 
@@ -184,9 +188,7 @@ struct TopToolbarView: View {
             }
             .padding(.horizontal, 12)
             .padding(.vertical, 8)
-            .background(Color.surfaceContainerLow)
-            .clipShape(RoundedRectangle(cornerRadius: AppRadius.full))
-            .overlay(RoundedRectangle(cornerRadius: AppRadius.full).stroke(Color.outlineVariant, lineWidth: 1))
+            .floatGlass(cornerRadius: AppRadius.full)
             .frame(maxWidth: 360)
 
             Spacer()
@@ -217,18 +219,30 @@ struct TopToolbarView: View {
             .buttonStyle(.plain)
 
             // New Catch CTA
-            Button {
-                nav.showingNewCatch = true
-            } label: {
-                Label("New Catch", systemImage: "plus")
-                    .font(.labelLg)
-            }
-            .buttonStyle(.borderedProminent)
-            .tint(.appPrimary)
-            .controlSize(.regular)
+            newCatchButton
         }
         .padding(.horizontal, 24)
         .padding(.vertical, 12)
         .background(Color.appBackground)
+    }
+
+    @ViewBuilder
+    private var newCatchButton: some View {
+        if #available(macOS 26, *) {
+            Button {
+                nav.showingNewCatch = true
+            } label: {
+                Label("New Catch", systemImage: "plus").font(.labelLg)
+            }
+            .buttonStyle(.glassProminent)
+        } else {
+            Button {
+                nav.showingNewCatch = true
+            } label: {
+                Label("New Catch", systemImage: "plus").font(.labelLg)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.appPrimary)
+        }
     }
 }

@@ -106,6 +106,103 @@ extension View {
     }
 }
 
+// MARK: - Liquid Glass Surface Modifiers
+// Gates on macOS 26+; falls back to .regularMaterial on earlier systems.
+
+extension View {
+    /// Float panel glass — used for map overlays, inspector panels, control panels.
+    /// The glass blurs map content behind it; tinted subtly with Evergreen.
+    func floatGlass(cornerRadius: CGFloat = AppRadius.lg, tint: Color? = nil) -> some View {
+        modifier(FloatGlassModifier(cornerRadius: cornerRadius, tint: tint))
+    }
+
+    /// Card glass — used for content cards, spot cards, catch record cards.
+    func cardGlass(cornerRadius: CGFloat = AppRadius.lg) -> some View {
+        modifier(CardGlassModifier(cornerRadius: cornerRadius))
+    }
+
+    /// Chip glass — used for tag chips and small label pills.
+    func chipGlass() -> some View {
+        modifier(ChipGlassModifier())
+    }
+
+    /// Sidebar item glass — interactive glass for nav items.
+    func sidebarItemGlass(isSelected: Bool) -> some View {
+        modifier(SidebarItemGlassModifier(isSelected: isSelected))
+    }
+}
+
+private struct FloatGlassModifier: ViewModifier {
+    let cornerRadius: CGFloat
+    let tint: Color?
+
+    func body(content: Content) -> some View {
+        if #available(macOS 26, *) {
+            let glass: Glass = tint.map { .regular.tint($0) } ?? .regular
+            content
+                .glassEffect(glass, in: .rect(cornerRadius: cornerRadius))
+        } else {
+            content
+                .background(.regularMaterial, in: RoundedRectangle(cornerRadius: cornerRadius))
+                .overlay(RoundedRectangle(cornerRadius: cornerRadius).stroke(Color.outlineVariant, lineWidth: 1))
+        }
+    }
+}
+
+private struct CardGlassModifier: ViewModifier {
+    let cornerRadius: CGFloat
+
+    func body(content: Content) -> some View {
+        if #available(macOS 26, *) {
+            content
+                .glassEffect(.regular, in: .rect(cornerRadius: cornerRadius))
+        } else {
+            content
+                .background(Color.surfaceContainerLow)
+                .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+                .overlay(RoundedRectangle(cornerRadius: cornerRadius).stroke(Color.outlineVariant, lineWidth: 1))
+        }
+    }
+}
+
+private struct ChipGlassModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        if #available(macOS 26, *) {
+            content
+                .glassEffect(.regular, in: .capsule)
+        } else {
+            content
+                .background(Color.surfaceContainerHighest)
+                .clipShape(Capsule())
+        }
+    }
+}
+
+private struct SidebarItemGlassModifier: ViewModifier {
+    let isSelected: Bool
+
+    func body(content: Content) -> some View {
+        if #available(macOS 26, *) {
+            if isSelected {
+                content
+                    .glassEffect(.regular.tint(Color.appPrimary).interactive(), in: .rect(cornerRadius: AppRadius.md))
+            } else {
+                // unselected: hover-reactive glass (no tint)
+                content
+                    .glassEffect(.regular.interactive(), in: .rect(cornerRadius: AppRadius.md))
+                    // visually hide the glass until hover via tint opacity trick
+                    .opacity(0.6)
+            }
+        } else {
+            content
+                .background(
+                    isSelected ? Color.appPrimary.opacity(0.1) : Color.clear,
+                    in: RoundedRectangle(cornerRadius: AppRadius.md)
+                )
+        }
+    }
+}
+
 // MARK: - Status Badge
 
 struct StatusBadge: View {

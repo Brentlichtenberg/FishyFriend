@@ -179,7 +179,7 @@ struct MapWaterwaysView: View {
             }
         }
         .padding(14)
-        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: AppRadius.lg))
+        .floatGlass(tint: Color.appPrimary.opacity(0.05))
         .frame(maxWidth: 300)
     }
 
@@ -265,7 +265,7 @@ struct HeatmapLegend: View {
         }
         .padding(.horizontal, 12)
         .padding(.vertical, 8)
-        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: AppRadius.lg))
+        .floatGlass()
     }
 }
 
@@ -310,7 +310,7 @@ struct SectionDetailPopup: View {
             .buttonStyle(.plain)
         }
         .padding(16)
-        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: AppRadius.lg))
+        .floatGlass()
         .padding(.horizontal, 60)
     }
 
@@ -347,7 +347,7 @@ struct StreamflowPanel: View {
             }
         }
         .padding(16)
-        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: AppRadius.lg))
+        .floatGlass()
         .appCardShadow()
         .frame(maxWidth: 260)
     }
@@ -381,16 +381,30 @@ struct StreamflowRow: View {
 
 struct MapControlsOverlay: View {
     var body: some View {
-        VStack(spacing: 8) {
-            mapControlButton(icon: "plus")
-            mapControlButton(icon: "minus")
-            Divider().frame(width: 36)
-            mapControlButton(icon: "location.fill")
-            mapControlButton(icon: "square.3.layers.3d")
+        if #available(macOS 26, *) {
+            GlassEffectContainer(spacing: 4) {
+                VStack(spacing: 4) {
+                    mapControlButton(icon: "plus")
+                    mapControlButton(icon: "minus")
+                    Divider().frame(width: 28).padding(.vertical, 2)
+                    mapControlButton(icon: "location.fill")
+                    mapControlButton(icon: "square.3.layers.3d")
+                }
+                .padding(6)
+            }
+            .appCardShadow()
+        } else {
+            VStack(spacing: 8) {
+                mapControlButton(icon: "plus")
+                mapControlButton(icon: "minus")
+                Divider().frame(width: 36)
+                mapControlButton(icon: "location.fill")
+                mapControlButton(icon: "square.3.layers.3d")
+            }
+            .padding(6)
+            .background(.regularMaterial, in: RoundedRectangle(cornerRadius: AppRadius.lg))
+            .appCardShadow()
         }
-        .padding(6)
-        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: AppRadius.lg))
-        .appCardShadow()
     }
 
     private func mapControlButton(icon: String) -> some View {
@@ -400,7 +414,19 @@ struct MapControlsOverlay: View {
                 .foregroundStyle(.onSurface)
                 .frame(width: 36, height: 36)
         }
-        .buttonStyle(.plain)
+        .modifier(MapControlButtonModifier())
+    }
+}
+
+private struct MapControlButtonModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        if #available(macOS 26, *) {
+            content
+                .buttonStyle(.glass)
+        } else {
+            content
+                .buttonStyle(.plain)
+        }
     }
 }
 
@@ -445,6 +471,7 @@ struct SpotCardsPanel: View {
         }
         .background(Color.appBackground)
         .clipShape(RoundedRectangle(cornerRadius: AppRadius.lg))
+        .modifier(SpotPanelGlassModifier())
         .appCardShadow()
         .frame(width: 280)
     }
@@ -531,4 +558,16 @@ struct WaterwaySpot: Identifiable {
         .init(name: "Sol Duc River",   category: "Fly Fishing", condition: .favorable, patterns: ["#8 Stimulator","WD-40"],  tempF: 52, visibilityFt: 4.5),
         .init(name: "Cowlitz River",   category: "Steelhead",  condition: .moderate,  patterns: ["Prom Queen","Flashabou"], tempF: 51, visibilityFt: 3.0),
     ]
+}
+
+private struct SpotPanelGlassModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        if #available(macOS 26, *) {
+            content
+                .glassEffect(.regular, in: .rect(cornerRadius: AppRadius.lg))
+        } else {
+            content
+                .overlay(RoundedRectangle(cornerRadius: AppRadius.lg).stroke(Color.outlineVariant, lineWidth: 1))
+        }
+    }
 }
