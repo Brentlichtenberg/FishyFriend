@@ -20,11 +20,13 @@ targets:
       - path: FishyFriendGuide
     resources:
       - path: FishyFriendGuide/Data/Resources
+      - path: FishyFriendGuide/Assets.xcassets
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.appsonapps.fishyfriendguide
         INFOPLIST_FILE: FishyFriendGuide/Info.plist
         SWIFTDATA_ENABLED: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
 
   FishyFriendGuideTests:
     type: bundle.unit-test

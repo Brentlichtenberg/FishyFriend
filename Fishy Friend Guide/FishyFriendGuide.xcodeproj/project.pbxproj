@@ -23,6 +23,7 @@
 		6C330E5DF7EF24C421E19D37 /* RecommendationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203BE3D9BCDC3DD8F4C9165 /* RecommendationCard.swift */; };
 		6CC93903E2FE98F9A71D7C3B /* regulations_2025.json in Resources */ = {isa = PBXBuildFile; fileRef = A1DD30861FFAC1294BE5C568 /* regulations_2025.json */; };
 		71D006267871ECB9B748CC3D /* CatchRecordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79492CAAB9656895B7F235BF /* CatchRecordRepository.swift */; };
+		78452B4B93421CD2B0F1777D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C682C63D37C7F44CEAEBE183 /* Assets.xcassets */; };
 		794D045CC3DDF1ACBF191CA0 /* CatchRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9D02EEC7C1C38519EBBBFA /* CatchRecord.swift */; };
 		80E342E88D16B0ED30A0E927 /* RegulationRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40CA8DE8B90E3D55DE790D /* RegulationRepositoryTests.swift */; };
 		95BC2B2DB0BF985E27998B0A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830E35D2E1E1882AC88902A /* DashboardView.swift */; };
@@ -35,6 +36,7 @@
 		C8384CC14FE43D23CF5E15FB /* RecommendationEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE323F0D3FEACC2A34873C1 /* RecommendationEngineTests.swift */; };
 		C9F455D92CF39655D956BA4D /* RepositoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822FD4000DCA06D92F4C62D8 /* RepositoryProtocols.swift */; };
 		D59E8B9BDF95B4C2E3C57628 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F755E4B9E421F0BB56E549 /* ContentView.swift */; };
+		D9949E9821F8168BB96CE005 /* AnglerCompassLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F8B2CF12D0E91EA51D06A5 /* AnglerCompassLogoView.swift */; };
 		E43292A17B620AF4EE91C285 /* WaterwayRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36C6203E3EF324B499D7F73 /* WaterwayRepository.swift */; };
 		ED35AF5C59C9D7225B35AD56 /* FishingRecommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0EF2F6B3667AF597966BDB /* FishingRecommendation.swift */; };
 		FC7B51A5908F781E73220B7F /* historical_catch_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 21A24CF98BF615788AC2764A /* historical_catch_data.json */; };
@@ -73,11 +75,13 @@
 		81534D8E77E51CA6738AFEFA /* HatchGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatchGuideView.swift; sourceTree = "<group>"; };
 		822FD4000DCA06D92F4C62D8 /* RepositoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocols.swift; sourceTree = "<group>"; };
 		8BFF41D4253EBA0F8A67ABBC /* CatchEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchEntryView.swift; sourceTree = "<group>"; };
+		90F8B2CF12D0E91EA51D06A5 /* AnglerCompassLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnglerCompassLogoView.swift; sourceTree = "<group>"; };
 		939B806C80AB7F86760AFDAF /* WDFWCreelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDFWCreelService.swift; sourceTree = "<group>"; };
 		9830E35D2E1E1882AC88902A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		A1DD30861FFAC1294BE5C568 /* regulations_2025.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = regulations_2025.json; sourceTree = "<group>"; };
 		B203BE3D9BCDC3DD8F4C9165 /* RecommendationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationCard.swift; sourceTree = "<group>"; };
 		BEE323F0D3FEACC2A34873C1 /* RecommendationEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationEngineTests.swift; sourceTree = "<group>"; };
+		C682C63D37C7F44CEAEBE183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8EDEB8DECABF50C4054B93F /* western_wa_waterways.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = western_wa_waterways.json; sourceTree = "<group>"; };
 		D325B35C9EC498EEA4305E8A /* RegulationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulationRepository.swift; sourceTree = "<group>"; };
 		DE258800140EBC2E7DFE9074 /* RiverListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverListView.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 		0BABD6D19BA26C805ACA2A08 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				90F8B2CF12D0E91EA51D06A5 /* AnglerCompassLogoView.swift */,
 				F9DE6CBCEEAE7FE461F382E9 /* Components */,
 				38F2A0D2BEA47B38414C4819 /* DesignSystem */,
 			);
@@ -152,6 +157,7 @@
 		4FD3BF5F137F20DD586A1850 /* FishyFriendGuide */ = {
 			isa = PBXGroup;
 			children = (
+				C682C63D37C7F44CEAEBE183 /* Assets.xcassets */,
 				FE4578E55CD07282C80BF681 /* Info.plist */,
 				144A39F9A9CA3443D9322748 /* App */,
 				3607875A705C0E793451133C /* Data */,
@@ -366,6 +372,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78452B4B93421CD2B0F1777D /* Assets.xcassets in Resources */,
 				FC7B51A5908F781E73220B7F /* historical_catch_data.json in Resources */,
 				6CC93903E2FE98F9A71D7C3B /* regulations_2025.json in Resources */,
 				23817CC5B593E70CF27F695F /* western_wa_waterways.json in Resources */,
@@ -379,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9949E9821F8168BB96CE005 /* AnglerCompassLogoView.swift in Sources */,
 				5ACDF621EF558E8E68F9BC61 /* AppEnvironment.swift in Sources */,
 				5F37982251B5D95B001D5834 /* AppNavigation.swift in Sources */,
 				0F6833ED342E783391AA9DE8 /* CatchEntryView.swift in Sources */,

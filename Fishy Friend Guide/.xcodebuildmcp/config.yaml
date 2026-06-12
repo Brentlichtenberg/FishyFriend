@@ -1,0 +1,6 @@
+workflows:
+  enabled:
+    - macos
+    - debugging
+    - ui-automation
+    - logging
