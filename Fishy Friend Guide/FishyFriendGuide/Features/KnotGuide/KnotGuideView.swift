@@ -372,13 +372,10 @@ struct KnotPageImagesView: View {
                     Image(nsImage: nsImage)
                         .resizable()
                         .scaledToFit()
-                        // Crop the top ~12% (header bar with "FLY FISHING: KNOTS & RIGGING" text)
-                        // and bottom ~3% (page number)
                         .clipped()
-                        .padding(.top, -24)  // visual trim of white header space
+                        .padding(.top, -24)
                         .frame(maxWidth: .infinity)
                 } else {
-                    // Fallback if image not found
                     HStack(spacing: 8) {
                         Image(systemName: "exclamationmark.triangle")
                             .foregroundStyle(Color.statusRestricted)
@@ -396,6 +393,13 @@ struct KnotPageImagesView: View {
                         .padding(.horizontal, 16)
                 }
             }
+
+            // Attribution
+            Text("Illustrations courtesy of Fly Fishers International · flyfishersinternational.org")
+                .font(.system(size: 10))
+                .foregroundStyle(Color.appOutline)
+                .padding(.top, 8)
+                .padding(.bottom, 12)
         }
     }
 
