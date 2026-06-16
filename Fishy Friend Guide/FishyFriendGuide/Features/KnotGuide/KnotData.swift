@@ -30,11 +30,9 @@ enum KnotCategory: String, CaseIterable, Identifiable {
 }
 
 enum KnotDiagramType {
-    case improvedClinch, doubleDavy, uniKnot, palomar
-    case nonSlipLoop, perfectionLoop, surgeonsLoop
-    case doubleSurgeons, bloodKnot, loopToLoop
-    case nailKnot, albright, arbor, snell
-    case dropperRig, nymphRig, skagitRig
+    /// One or more page image filenames (from Illustrations/ bundle folder)
+    case pages([String])
+    /// Fallback text for knots without illustrations
     case conceptText(String)
 }
 
@@ -110,7 +108,7 @@ struct KnotGuideData {
                 "Count your wraps — 5 is the minimum. 6–7 is better for thin tippet (5X–7X).",
                 "The extra step of threading through the big loop (making it 'Improved') significantly increases strength and is worth the extra second."
             ],
-            diagram: .improvedClinch
+            diagram: .pages(["page_improved_clinch.png"])
         ),
 
         FlyFishingKnot(
@@ -133,7 +131,7 @@ struct KnotGuideData {
                 "The key step is in step 2 — the tag must pass between the overhand knot and the hook. Getting this right makes the Double Davy ultra-strong.",
                 "Once mastered this knot ties in under 5 seconds, getting you back to fishing faster."
             ],
-            diagram: .doubleDavy
+            diagram: .pages(["page_double_davy.png"])
         ),
 
         FlyFishingKnot(
@@ -157,7 +155,7 @@ struct KnotGuideData {
                 "4 wraps for thick tippet (0X–2X), 5–6 wraps for thin tippet (4X–7X).",
                 "Leaving the loop slightly open (don't slide all the way to the eye) gives streamers and wet flies more natural swimming action."
             ],
-            diagram: .uniKnot
+            diagram: .pages(["page_uni_knot.png"])
         ),
 
         FlyFishingKnot(
@@ -181,7 +179,7 @@ struct KnotGuideData {
                 "Make sure the loop goes completely over the hook on step 3 — it's easy to let it catch on the hook point.",
                 "Keep the overhand knot loose until the loop is over the hook. Tightening too early makes the final seating difficult."
             ],
-            diagram: .palomar
+            diagram: .pages(["page_palomar.png"])
         ),
 
         // ── TERMINAL LOOPS ──────────────────────────────────────────
@@ -208,7 +206,7 @@ struct KnotGuideData {
                 "3 turns for 25–60 lb · 4 turns for 10–25 lb · 5 turns for lines under 10 lb.",
                 "The loop size is determined by how far from the hook you place the initial overhand knot — adjust to your preference."
             ],
-            diagram: .nonSlipLoop
+            diagram: .pages(["page_non_slip_loop_a.png","page_non_slip_loop_b.png"])
         ),
 
         FlyFishingKnot(
@@ -233,7 +231,7 @@ struct KnotGuideData {
                 "The key is step 3 — the tag end must come between the two loops, not around the outside.",
                 "This knot ties very neatly straight in line, unlike the Surgeon's Loop which can angle off slightly."
             ],
-            diagram: .perfectionLoop
+            diagram: .pages(["page_perfection_loop.png"])
         ),
 
         FlyFishingKnot(
@@ -258,7 +256,7 @@ struct KnotGuideData {
                 "Always use the double version — the single version is too weak for consistent use.",
                 "Wet the knot thoroughly before seating. The multiple wraps can overheat and weaken if tightened dry."
             ],
-            diagram: .surgeonsLoop
+            diagram: .pages(["page_surgeons_loop.png"])
         ),
 
         // ── LEADER TO TIPPET ────────────────────────────────────────
@@ -286,7 +284,7 @@ struct KnotGuideData {
                 "The critical step is tightening — pull all four strands at once. Hold the leader and tippet in one hand, the two tag ends in the other, and pull both pairs simultaneously.",
                 "When joining lines of very different diameters (more than 2x difference), use a Blood Knot for a smaller profile."
             ],
-            diagram: .doubleSurgeons
+            diagram: .pages(["page_double_surgeons.png"])
         ),
 
         FlyFishingKnot(
@@ -311,7 +309,7 @@ struct KnotGuideData {
                 "Keep the two lines parallel during tying — don't let them twist around each other.",
                 "If the coils cross over each other when tightening, start over. Crossing coils dramatically weaken the knot."
             ],
-            diagram: .bloodKnot
+            diagram: .pages(["page_blood_knot.png"])
         ),
 
         // ── FLY LINE TO LEADER ──────────────────────────────────────
@@ -336,7 +334,7 @@ struct KnotGuideData {
                 "Always check for a girth hitch — it's the most common mistake and can reduce strength by 50%.",
                 "The correct result looks like a chain link — two loops interlocked at 90° to each other."
             ],
-            diagram: .loopToLoop
+            diagram: .pages(["page_loop_to_loop.png"])
         ),
 
         FlyFishingKnot(
@@ -361,7 +359,7 @@ struct KnotGuideData {
                 "A tube or hollow needle works in place of a nail knot tool — and is easier to use.",
                 "The coils must be tight and neat — loose coils won't grip the fly line properly."
             ],
-            diagram: .nailKnot
+            diagram: .pages(["page_nail_knot_a.png","page_nail_knot_b.png"])
         ),
 
         // ── BACKING TO FLY LINE ─────────────────────────────────────
@@ -388,7 +386,7 @@ struct KnotGuideData {
                 "10 wraps is the standard — fewer wraps reduce strength significantly.",
                 "The tag end must exit the loop on the same side it entered. Exiting the opposite side creates a loose knot."
             ],
-            diagram: .albright
+            diagram: .pages(["page_albright_a.png","page_albright_b.png"])
         ),
 
         FlyFishingKnot(
@@ -438,7 +436,7 @@ struct KnotGuideData {
                 "The Uni Knot (Duncan Knot) can also be used here for a slightly stronger connection.",
                 "Wind the backing on under tension to ensure it sits evenly on the spool."
             ],
-            diagram: .arbor
+            diagram: .pages(["page_arbor.png"])
         ),
 
         // ── SPECIALTY ──────────────────────────────────────────────
@@ -489,7 +487,7 @@ struct KnotGuideData {
                 "A hemostat clamped to the tag end is very helpful for controlling the tension as the knot seats.",
                 "This knot provides a much more positive hook set than tying to the eye — the line pulls straight in line with the shank."
             ],
-            diagram: .snell
+            diagram: .pages(["page_snell_a.png","page_snell_b.png"])
         ),
     ]
 
@@ -514,7 +512,7 @@ struct KnotGuideData {
                 ("Double-dropper", "Both subsurface; indicator recommended"),
                 ("Tippet ring option", "Attach both droppers to a tippet ring for easy changes"),
             ],
-            diagram: .dropperRig
+            diagram: .pages(["page_dropper_rig.png"])
         ),
 
         RiggingSetup(
@@ -536,7 +534,7 @@ struct KnotGuideData {
                 ("Weight", "Heavy bead-head flies; no split shot"),
                 ("Indicator", "Colored sighter mono built into leader"),
             ],
-            diagram: .nymphRig
+            diagram: .conceptText("Czech Nymphing: Long rod elevated · Leader = rod length · Heavy bead-head flies · Sighter built into leader · Short drift 1–20 ft")
         ),
 
         RiggingSetup(
@@ -559,7 +557,7 @@ struct KnotGuideData {
                 ("Weight", "Split shot plus lightly weighted flies"),
                 ("Indicator", "Knotted leader section or line/leader junction"),
             ],
-            diagram: .nymphRig
+            diagram: .conceptText("Harvey / Humphreys: Tuck cast (abrupt stop on forward cast) · Leader 8–12 ft · Split shot + lightly weighted flies · Knotted leader as indicator")
         ),
 
         RiggingSetup(
@@ -584,7 +582,7 @@ struct KnotGuideData {
                 ("Tippet", "5 ft of 5X, size depends on species"),
                 ("Arm position", "Extended and elevated throughout drift — leader never touches water"),
             ],
-            diagram: .nymphRig
+            diagram: .pages(["page_french_nymphing.png"])
         ),
 
         RiggingSetup(
@@ -606,7 +604,7 @@ struct KnotGuideData {
                 ("Leader components", "Sink tip + level monofilament"),
                 ("Evolution", "Rods getting shorter and lighter; heads shorter but same grain weight"),
             ],
-            diagram: .skagitRig
+            diagram: .conceptText("Skagit: Running line → Shooting head (20–26 ft) → Sink tip → Level mono tippet → Fly\n\nDeveloped on the Skagit River, WA · Used year-round for steelhead and salmon")
         ),
     ]
 
