@@ -27,6 +27,7 @@ struct ContentView: View {
         switch nav.selectedSection {
         case .map:               MapWaterwaysView()
         case .hatchGuide:        HatchGuideView()
+        case .knotGuide:         KnotGuideView()
         case .regulations:       RegulationListView()
         case .historicalCatches: HistoricalCatchesView()
         case .weather:           WeatherView()

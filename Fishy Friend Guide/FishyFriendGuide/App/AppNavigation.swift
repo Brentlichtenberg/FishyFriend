@@ -3,6 +3,7 @@ import SwiftUI
 enum AppSection: String, CaseIterable, Identifiable {
     case map           = "Map & Waterways"
     case hatchGuide    = "Hatch Guide"
+    case knotGuide     = "Knot Guide"
     case regulations   = "Regulations"
     case historicalCatches = "Historical Catches"
     case weather       = "Weather"
@@ -13,6 +14,7 @@ enum AppSection: String, CaseIterable, Identifiable {
         switch self {
         case .map:               return "map"
         case .hatchGuide:        return "ant"
+        case .knotGuide:         return "link"
         case .regulations:       return "scalemass"
         case .historicalCatches: return "clock.arrow.circlepath"
         case .weather:           return "thermometer.medium"

@@ -19,6 +19,7 @@
 		48E7E482ED8B2DF1F9CA2A5D /* RiverListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE258800140EBC2E7DFE9074 /* RiverListView.swift */; };
 		55CDFC71506FB42C1AD27025 /* MapWaterwaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E970AC27369935793777CE0E /* MapWaterwaysView.swift */; };
 		5ACDF621EF558E8E68F9BC61 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B251C44785454C4C1FA88E /* AppEnvironment.swift */; };
+		5F0F484E6BEEF02902416C76 /* KnotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A607DD48C33D882452D0EE /* KnotData.swift */; };
 		5F37982251B5D95B001D5834 /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9664591DF164C8A244143C /* AppNavigation.swift */; };
 		6C330E5DF7EF24C421E19D37 /* RecommendationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203BE3D9BCDC3DD8F4C9165 /* RecommendationCard.swift */; };
 		6CC93903E2FE98F9A71D7C3B /* regulations_2025.json in Resources */ = {isa = PBXBuildFile; fileRef = A1DD30861FFAC1294BE5C568 /* regulations_2025.json */; };
@@ -30,6 +31,7 @@
 		987DC3860FEEEF59D7BE6227 /* HistoricalCatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F031A6163A4AD1CFE41B3A /* HistoricalCatchesView.swift */; };
 		99E32B268579C9AAE56E6702 /* Regulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A398F26520C00A2411B763 /* Regulation.swift */; };
 		AA0AC22EB453C28CE745A69D /* CatchLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EE2EDED0D4B60399FC77DC /* CatchLogView.swift */; };
+		AD1D784B3CF9E31579922550 /* KnotGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88B779FED44741AAE95B861 /* KnotGuideView.swift */; };
 		AEA0D5E7F800069600CB1BAE /* HatchGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81534D8E77E51CA6738AFEFA /* HatchGuideView.swift */; };
 		B3E4DADA5F371866783FDE9E /* HistoricalDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64832F6292833CD6B760DF8A /* HistoricalDataRepository.swift */; };
 		B796408F2D424311C8F4DFF1 /* FishyFriendGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B65FCBD9517D60AC6311BC /* FishyFriendGuideApp.swift */; };
@@ -80,6 +82,7 @@
 		939B806C80AB7F86760AFDAF /* WDFWCreelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDFWCreelService.swift; sourceTree = "<group>"; };
 		9830E35D2E1E1882AC88902A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		A1DD30861FFAC1294BE5C568 /* regulations_2025.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = regulations_2025.json; sourceTree = "<group>"; };
+		B0A607DD48C33D882452D0EE /* KnotData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotData.swift; sourceTree = "<group>"; };
 		B203BE3D9BCDC3DD8F4C9165 /* RecommendationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationCard.swift; sourceTree = "<group>"; };
 		BEE323F0D3FEACC2A34873C1 /* RecommendationEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationEngineTests.swift; sourceTree = "<group>"; };
 		C2F322D98C565D00E62FBB5F /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 		D325B35C9EC498EEA4305E8A /* RegulationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulationRepository.swift; sourceTree = "<group>"; };
 		DE258800140EBC2E7DFE9074 /* RiverListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverListView.swift; sourceTree = "<group>"; };
 		E1F031A6163A4AD1CFE41B3A /* HistoricalCatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalCatchesView.swift; sourceTree = "<group>"; };
+		E88B779FED44741AAE95B861 /* KnotGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotGuideView.swift; sourceTree = "<group>"; };
 		E970AC27369935793777CE0E /* MapWaterwaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWaterwaysView.swift; sourceTree = "<group>"; };
 		F1B65FCBD9517D60AC6311BC /* FishyFriendGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishyFriendGuideApp.swift; sourceTree = "<group>"; };
 		F36C6203E3EF324B499D7F73 /* WaterwayRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterwayRepository.swift; sourceTree = "<group>"; };
@@ -124,6 +128,15 @@
 				6B3171EC9966E4D642E270F8 /* FishyFriendGuideTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		306E30FDAB8273B69AB1F0F9 /* KnotGuide */ = {
+			isa = PBXGroup;
+			children = (
+				B0A607DD48C33D882452D0EE /* KnotData.swift */,
+				E88B779FED44741AAE95B861 /* KnotGuideView.swift */,
+			);
+			path = KnotGuide;
 			sourceTree = "<group>";
 		};
 		3607875A705C0E793451133C /* Data */ = {
@@ -187,6 +200,7 @@
 				E7BA4A0128E6A22861447775 /* CatchLog */,
 				F4F45257DFBEDD106CF025D2 /* Dashboard */,
 				60ABEA74D1D8819BF410DA6F /* HatchGuide */,
+				306E30FDAB8273B69AB1F0F9 /* KnotGuide */,
 				BCF472DD4E967A5832628F42 /* MapWaterways */,
 				BB31CCBE2DBEBDAA1613CFDB /* Regulations */,
 				510802F69E8879833A226C40 /* RiverBrowser */,
@@ -405,6 +419,8 @@
 				AEA0D5E7F800069600CB1BAE /* HatchGuideView.swift in Sources */,
 				987DC3860FEEEF59D7BE6227 /* HistoricalCatchesView.swift in Sources */,
 				B3E4DADA5F371866783FDE9E /* HistoricalDataRepository.swift in Sources */,
+				5F0F484E6BEEF02902416C76 /* KnotData.swift in Sources */,
+				AD1D784B3CF9E31579922550 /* KnotGuideView.swift in Sources */,
 				55CDFC71506FB42C1AD27025 /* MapWaterwaysView.swift in Sources */,
 				6C330E5DF7EF24C421E19D37 /* RecommendationCard.swift in Sources */,
 				FEC347480F4D8A5C0FE8DC16 /* RecommendationEngine.swift in Sources */,
