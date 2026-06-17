@@ -102,10 +102,10 @@ struct SidebarNavItem: View {
                 Image(systemName: section.icon)
                     .font(.system(size: 15, weight: .medium))
                     .frame(width: 20)
-                    .foregroundStyle(isSelected ? Color.appPrimary : Color.onSurfaceVariant)
+                    .foregroundStyle(isSelected ? Color.white : Color.onSurfaceVariant)
                 Text(section.rawValue)
                     .font(.labelLg)
-                    .foregroundStyle(isSelected ? Color.appPrimary : Color.onSurfaceVariant)
+                    .foregroundStyle(isSelected ? Color.white : Color.onSurfaceVariant)
                 Spacer()
             }
             .padding(.horizontal, 12)
