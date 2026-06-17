@@ -26,4 +26,6 @@ enum AppSection: String, CaseIterable, Identifiable {
 final class NavigationState {
     var selectedSection: AppSection = .map
     var showingNewCatch = false
+    var searchText: String = ""
+    var showingSearch = false
 }

@@ -44,6 +44,7 @@
 		5D830C6D8C02FD8D1C2E17CE /* page_palomar.png in Resources */ = {isa = PBXBuildFile; fileRef = 01544F1E618C1C057F24932C /* page_palomar.png */; };
 		5F0F484E6BEEF02902416C76 /* KnotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A607DD48C33D882452D0EE /* KnotData.swift */; };
 		5F37982251B5D95B001D5834 /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9664591DF164C8A244143C /* AppNavigation.swift */; };
+		60E23A47274D39E46F8CE6F5 /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58186DEED63AC12BBE9573FA /* SearchResultsView.swift */; };
 		6158C42E329C23322B9990FD /* page_snell_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 427B7B7255DF6AC6B1F720C1 /* page_snell_b.png */; };
 		685FC15B5ABBE27250175B15 /* surgeons_loop_2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75798861576E584E964FFA72 /* surgeons_loop_2.jpeg */; };
 		688468A532F9F2361B943E3C /* perfection_loop_4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CC5174932974C0CF38F3BE3A /* perfection_loop_4.jpeg */; };
@@ -177,6 +178,7 @@
 		51F17F3B88EDE5C343A25F83 /* page_surgeons_loop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page_surgeons_loop.png; sourceTree = "<group>"; };
 		55640E7AE996E1B746A4265E /* albright_a_3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = albright_a_3.jpeg; sourceTree = "<group>"; };
 		56F755E4B9E421F0BB56E549 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		58186DEED63AC12BBE9573FA /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
 		589AA17E74B8C50DA46315F9 /* RegulationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulationListView.swift; sourceTree = "<group>"; };
 		5D8BC7694C8674B393E92F9D /* RiverDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiverDetailView.swift; sourceTree = "<group>"; };
 		5ED39A056506F78DF1AD6002 /* FishyFriendGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishyFriendGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -285,6 +287,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		281C7538A8C79D34D8D305B6 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				58186DEED63AC12BBE9573FA /* SearchResultsView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		288DD19C42202356B56F47E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +379,7 @@
 				BCF472DD4E967A5832628F42 /* MapWaterways */,
 				BB31CCBE2DBEBDAA1613CFDB /* Regulations */,
 				510802F69E8879833A226C40 /* RiverBrowser */,
+				281C7538A8C79D34D8D305B6 /* Search */,
 				DA805EA46BF3EC949569A16E /* Weather */,
 			);
 			path = Features;
@@ -766,6 +777,7 @@
 				C9F455D92CF39655D956BA4D /* RepositoryProtocols.swift in Sources */,
 				1848A8D3E2A40E329E4FE19A /* RiverDetailView.swift in Sources */,
 				48E7E482ED8B2DF1F9CA2A5D /* RiverListView.swift in Sources */,
+				60E23A47274D39E46F8CE6F5 /* SearchResultsView.swift in Sources */,
 				387224FD747AA619F0DDBDA2 /* WDFWCreelService.swift in Sources */,
 				1C5C04AB8385E196109B152A /* Waterway.swift in Sources */,
 				E43292A17B620AF4EE91C285 /* WaterwayRepository.swift in Sources */,

@@ -20,6 +20,12 @@ struct ContentView: View {
         .sheet(isPresented: $nav.showingNewCatch) {
             CatchEntryView()
         }
+        .sheet(isPresented: $nav.showingSearch) {
+            SearchResultsView(query: nav.searchText) {
+                nav.searchText = ""
+                nav.showingSearch = false
+            }
+        }
     }
 
     @ViewBuilder
@@ -175,17 +181,34 @@ struct FieldEditionCard: View {
 
 struct TopToolbarView: View {
     let nav: NavigationState
+    @FocusState private var searchFocused: Bool
 
     var body: some View {
         HStack(spacing: 16) {
-            // Search
+            // Live search bar
             HStack(spacing: 6) {
                 Image(systemName: "magnifyingglass")
-                    .foregroundStyle(.appOutline)
-                Text("Search rivers, species, or regulations…")
+                    .foregroundStyle(searchFocused ? Color.appPrimary : Color.appOutline)
+                TextField("Search rivers, species, or regulations…", text: Bindable(nav).searchText)
                     .font(.bodyMd)
-                    .foregroundStyle(.appOutline)
-                Spacer()
+                    .textFieldStyle(.plain)
+                    .foregroundStyle(Color.onSurface)
+                    .focused($searchFocused)
+                    .onSubmit { if !nav.searchText.isEmpty { nav.showingSearch = true } }
+                    .onChange(of: nav.searchText) { _, new in
+                        nav.showingSearch = !new.isEmpty
+                    }
+                if !nav.searchText.isEmpty {
+                    Button {
+                        nav.searchText = ""
+                        nav.showingSearch = false
+                    } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundStyle(Color.appOutline)
+                            .font(.system(size: 13))
+                    }
+                    .buttonStyle(.plain)
+                }
             }
             .padding(.horizontal, 12)
             .padding(.vertical, 8)
@@ -194,7 +217,6 @@ struct TopToolbarView: View {
 
             Spacer()
 
-            // Dashboard tab
             Text("Dashboard")
                 .font(.labelLg)
                 .foregroundStyle(.appPrimary)
@@ -219,7 +241,6 @@ struct TopToolbarView: View {
             }
             .buttonStyle(.plain)
 
-            // New Catch CTA
             newCatchButton
         }
         .padding(.horizontal, 24)
