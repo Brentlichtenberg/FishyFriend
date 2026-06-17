@@ -64,7 +64,7 @@ struct SearchResultsView: View {
                 emptyState
             }
         }
-        .frame(minWidth: 900, minHeight: 600)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.appBackground)
         .task {
             selectedWaterway = matchedWaterways.first

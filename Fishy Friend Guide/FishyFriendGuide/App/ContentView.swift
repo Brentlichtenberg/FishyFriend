@@ -13,18 +13,20 @@ struct ContentView: View {
                 TopToolbarView(nav: nav)
                 Divider()
                     .background(Color.outlineVariant)
-                detailContent
+                // Show search results inline when query is active — no sheet, keeps text field focused
+                if nav.showingSearch && !nav.searchText.isEmpty {
+                    SearchResultsView(query: nav.searchText) {
+                        nav.searchText = ""
+                        nav.showingSearch = false
+                    }
+                } else {
+                    detailContent
+                }
             }
             .background(Color.appBackground)
         }
         .sheet(isPresented: $nav.showingNewCatch) {
             CatchEntryView()
-        }
-        .sheet(isPresented: $nav.showingSearch) {
-            SearchResultsView(query: nav.searchText) {
-                nav.searchText = ""
-                nav.showingSearch = false
-            }
         }
     }
 
@@ -194,9 +196,16 @@ struct TopToolbarView: View {
                     .textFieldStyle(.plain)
                     .foregroundStyle(Color.onSurface)
                     .focused($searchFocused)
-                    .onSubmit { if !nav.searchText.isEmpty { nav.showingSearch = true } }
+                    // Results appear inline — just update showingSearch on text change (no sheet opened)
                     .onChange(of: nav.searchText) { _, new in
                         nav.showingSearch = !new.isEmpty
+                    }
+                    // Escape clears search and returns to normal view
+                    .onKeyPress(.escape) {
+                        nav.searchText = ""
+                        nav.showingSearch = false
+                        searchFocused = false
+                        return .handled
                     }
                 if !nav.searchText.isEmpty {
                     Button {
