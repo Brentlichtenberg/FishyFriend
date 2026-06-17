@@ -12,7 +12,6 @@
 		0C127C0ED778CDFAC4D37D77 /* nail_knot_b_1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DA1F32BC9D37FCD129DE914E /* nail_knot_b_1.jpeg */; };
 		0ED43CAFDB9714094C9B5E4F /* nail_knot_b_2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 03D71253A76DF473682F4232 /* nail_knot_b_2.jpeg */; };
 		0F6833ED342E783391AA9DE8 /* CatchEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF41D4253EBA0F8A67ABBC /* CatchEntryView.swift */; };
-		150F4198A6C47C51B1EE127B /* EmergencyRulesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E483FC6225DB9C52214A4093 /* EmergencyRulesService.swift */; };
 		182FB89E8A01884E1AE2FB6B /* palomar_2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 51B998CD840CF0CBF39143BE /* palomar_2.jpeg */; };
 		1848A8D3E2A40E329E4FE19A /* RiverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8BC7694C8674B393E92F9D /* RiverDetailView.swift */; };
 		19A1130DBBB6763DE88CE593 /* albright_a_3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 55640E7AE996E1B746A4265E /* albright_a_3.jpeg */; };
@@ -250,7 +249,6 @@
 		E1F031A6163A4AD1CFE41B3A /* HistoricalCatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalCatchesView.swift; sourceTree = "<group>"; };
 		E2873BEEE9551E6B1C91E190 /* page_uni_knot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page_uni_knot.png; sourceTree = "<group>"; };
 		E47371C86B0A19ED02439769 /* page_albright_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page_albright_b.png; sourceTree = "<group>"; };
-		E483FC6225DB9C52214A4093 /* EmergencyRulesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyRulesService.swift; sourceTree = "<group>"; };
 		E88B779FED44741AAE95B861 /* KnotGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotGuideView.swift; sourceTree = "<group>"; };
 		E970AC27369935793777CE0E /* MapWaterwaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWaterwaysView.swift; sourceTree = "<group>"; };
 		F18F831AF7307706EB7BC9ED /* albright_a_1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = albright_a_1.jpeg; sourceTree = "<group>"; };
@@ -310,7 +308,6 @@
 			isa = PBXGroup;
 			children = (
 				79492CAAB9656895B7F235BF /* CatchRecordRepository.swift */,
-				E483FC6225DB9C52214A4093 /* EmergencyRulesService.swift */,
 				64832F6292833CD6B760DF8A /* HistoricalDataRepository.swift */,
 				D325B35C9EC498EEA4305E8A /* RegulationRepository.swift */,
 				822FD4000DCA06D92F4C62D8 /* RepositoryProtocols.swift */,
@@ -753,7 +750,6 @@
 				D59E8B9BDF95B4C2E3C57628 /* ContentView.swift in Sources */,
 				95BC2B2DB0BF985E27998B0A /* DashboardView.swift in Sources */,
 				45CD8F5AE3901481525504AB /* DesignSystem.swift in Sources */,
-				150F4198A6C47C51B1EE127B /* EmergencyRulesService.swift in Sources */,
 				ED35AF5C59C9D7225B35AD56 /* FishingRecommendation.swift in Sources */,
 				B796408F2D424311C8F4DFF1 /* FishyFriendGuideApp.swift in Sources */,
 				AEA0D5E7F800069600CB1BAE /* HatchGuideView.swift in Sources */,

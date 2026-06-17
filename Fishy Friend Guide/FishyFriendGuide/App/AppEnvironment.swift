@@ -9,7 +9,6 @@ final class AppEnvironment: ObservableObject {
     let historicalRepo: HistoricalDataRepository
     let engine: RecommendationEngine
     let creelService: WDFWCreelService
-    let emergencyRulesService: EmergencyRulesService
 
     init() {
         let wRepo = WaterwayRepository()
@@ -24,6 +23,5 @@ final class AppEnvironment: ObservableObject {
             historicalRepo: hRepo
         )
         creelService = WDFWCreelService()
-        emergencyRulesService = EmergencyRulesService()
     }
 }

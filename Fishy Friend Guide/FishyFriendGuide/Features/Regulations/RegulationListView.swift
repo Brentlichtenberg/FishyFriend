@@ -5,9 +5,6 @@ struct RegulationListView: View {
     @State private var selectedDate = Date()
     @State private var filterCategory: RegulationCategory = .inland
     @State private var searchText = ""
-    @State private var emergencyRules: [EmergencyRule] = []
-    @State private var emergencyLoadError: String? = nil
-    @State private var isLoadingEmergency = false
 
     enum RegulationCategory: String, CaseIterable {
         case inland = "Inland"
@@ -30,17 +27,12 @@ struct RegulationListView: View {
                 // Official badge + header
                 headerSection
 
-                // Live WDFW emergency rules
-                EmergencyRulesBannerSection(
-                    rules: emergencyRules,
-                    isLoading: isLoadingEmergency,
-                    error: emergencyLoadError
-                ) {
-                    Task { await loadEmergencyRules(forceRefresh: true) }
-                }
+                // Critical alert banner
+                CriticalAlertBanner()
 
                 // Two-column: regulation table + license quick check
                 HStack(alignment: .top, spacing: 24) {
+                    // Main regulation table
                     VStack(alignment: .leading, spacing: 16) {
                         HStack {
                             Text("Regional Waterway Rules")
@@ -53,6 +45,7 @@ struct RegulationListView: View {
                     }
                     .frame(maxWidth: .infinity)
 
+                    // Right sidebar: license check + info cards
                     VStack(spacing: 16) {
                         LicenseQuickCheck()
                         SelectiveGearCard()
@@ -67,23 +60,6 @@ struct RegulationListView: View {
             .padding(32)
         }
         .background(Color.appBackground)
-        .task { await loadEmergencyRules() }
-    }
-
-    // MARK: - Emergency rules loading
-
-    @MainActor
-    private func loadEmergencyRules(forceRefresh: Bool = false) async {
-        // Auto-refresh if today is Saturday or force requested
-        let shouldRefresh = forceRefresh || EmergencyRulesService.isSaturday()
-        isLoadingEmergency = true
-        emergencyLoadError = nil
-        do {
-            emergencyRules = try await env.emergencyRulesService.fetchRules(forceRefresh: shouldRefresh)
-        } catch {
-            emergencyLoadError = "Could not load emergency rules. Tap refresh to retry."
-        }
-        isLoadingEmergency = false
     }
 
     private var headerSection: some View {
@@ -125,132 +101,38 @@ struct RegulationListView: View {
     }
 }
 
-// MARK: - Emergency Rules Banner Section
+// MARK: - Critical Alert Banner
 
-struct EmergencyRulesBannerSection: View {
-    let rules: [EmergencyRule]
-    let isLoading: Bool
-    let error: String?
-    let onRefresh: () -> Void
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            // Section header
-            HStack(spacing: 8) {
-                Image(systemName: "exclamationmark.triangle.fill")
-                    .foregroundStyle(Color.statusRestricted)
-                    .font(.system(size: 16))
-                Text("WDFW Emergency Rules")
-                    .font(.headlineSm)
-                    .foregroundStyle(Color.onSurface)
-                Spacer()
-                if isLoading {
-                    ProgressView().controlSize(.small)
-                    Text("Refreshing…")
-                        .font(.labelMd)
-                        .foregroundStyle(Color.onSurfaceVariant)
-                } else {
-                    Button {
-                        onRefresh()
-                    } label: {
-                        HStack(spacing: 4) {
-                            Image(systemName: "arrow.clockwise")
-                                .font(.system(size: 11))
-                            Text("Refresh")
-                                .font(.labelMd)
-                        }
-                        .foregroundStyle(Color.appSecondary)
-                    }
-                    .buttonStyle(.plain)
-                }
-            }
-
-            if let error {
-                HStack(spacing: 8) {
-                    Image(systemName: "wifi.slash")
-                        .foregroundStyle(Color.statusClosed)
-                    Text(error)
-                        .font(.bodyMd)
-                        .foregroundStyle(Color.onSurfaceVariant)
-                }
-                .padding(14)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .background(Color.statusClosed.opacity(0.06))
-                .clipShape(RoundedRectangle(cornerRadius: AppRadius.lg))
-            } else if rules.isEmpty && !isLoading {
-                HStack(spacing: 8) {
-                    Image(systemName: "checkmark.circle.fill")
-                        .foregroundStyle(Color.statusOpen)
-                    Text("No active emergency rules at this time.")
-                        .font(.bodyMd)
-                        .foregroundStyle(Color.onSurfaceVariant)
-                }
-                .padding(14)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .background(Color.statusOpen.opacity(0.06))
-                .clipShape(RoundedRectangle(cornerRadius: AppRadius.lg))
-            } else {
-                LazyVStack(spacing: 8) {
-                    ForEach(rules) { rule in
-                        EmergencyRuleBanner(rule: rule)
-                    }
-                }
-            }
-
-            // Attribution note
-            if !rules.isEmpty {
-                HStack(spacing: 4) {
-                    Image(systemName: "clock")
-                        .font(.system(size: 10))
-                        .foregroundStyle(Color.appOutline)
-                    Text("Live from wdfw.wa.gov · Refreshes automatically every Saturday")
-                        .font(.system(size: 10))
-                        .foregroundStyle(Color.appOutline)
-                }
-            }
-        }
-    }
-}
-
-struct EmergencyRuleBanner: View {
-    let rule: EmergencyRule
-    @State private var isHovered = false
-
+struct CriticalAlertBanner: View {
     var body: some View {
         ZStack(alignment: .bottomLeading) {
             RoundedRectangle(cornerRadius: AppRadius.lg)
-                .fill(Color.statusRestricted.opacity(isHovered ? 0.14 : 0.10))
+                .fill(Color.appPrimary.opacity(0.12))
+                .frame(height: 160)
                 .overlay(
                     ZStack {
-                        Image(systemName: "exclamationmark.triangle.fill")
-                            .font(.system(size: 50))
-                            .foregroundStyle(Color.statusRestricted.opacity(0.06))
-                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
-                            .padding(.trailing, 16)
+                        Image(systemName: "water.waves.and.arrow.trianglehead.up.fill")
+                            .font(.system(size: 60))
+                            .foregroundStyle(Color.appPrimary.opacity(0.08))
                     }
                 )
 
-            HStack(alignment: .top, spacing: 12) {
-                VStack(alignment: .leading, spacing: 6) {
-                    TagChip(label: "EMERGENCY RULE", color: .statusRestricted, textColor: .white)
-                    Text(rule.title)
-                        .font(.headlineSm)
-                        .foregroundStyle(Color.onSurface)
-                    Button("View Full Rule on WDFW →") {
-                        if let url = URL(string: rule.url) {
-                            NSWorkspace.shared.open(url)
-                        }
-                    }
+            VStack(alignment: .leading, spacing: 8) {
+                TagChip(label: "CRITICAL SEASON", color: .conservationGold, textColor: .white)
+                Text("Columbia River Salmon Run")
+                    .font(.headlineMd)
+                    .foregroundStyle(.onSurface)
+                Text("New emergency rules in effect for the Lower Columbia. Please review the\nupdated retention limits for Chinook and Coho salmon before launching.")
+                    .font(.bodyMd)
+                    .foregroundStyle(.onSurfaceVariant)
+                Button("View Specific Rules →") { }
                     .buttonStyle(.plain)
                     .font(.labelLg)
-                    .foregroundStyle(Color.appSecondary)
-                    .padding(.top, 2)
-                }
+                    .foregroundStyle(.appSecondary)
+                    .padding(.top, 4)
             }
-            .padding(18)
+            .padding(20)
         }
-        .onHover { isHovered = $0 }
-        .animation(.easeInOut(duration: 0.15), value: isHovered)
     }
 }
 
